@@ -1,0 +1,86 @@
+# Site
+title: Portfolio
+url: "https://annafoldberg.github.io"
+baseurl: ""
+#show_downloads: false
+
+# Theme
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: "default"
+search: false # built-in search
+sass:
+  sourcemap: never # disables sourcemaps
+atom_feed:
+  hide: true
+
+# Languages
+languages: ["en","da","it"]
+default_lang: "en"
+exclude_from_localization: ["assets","images","favicon.ico"] # keeps assets, images, and favicons global instead of language-scoped
+
+# Plugins
+plugins:
+  - jekyll-polyglot # needs GitHub Actions build
+#  - jekyll-include-cache
+  - jekyll-archives # auto-generates archive pages by year/tag/category
+  
+# Permalinks
+permalink: /:categories/:title/
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+  notes:
+    output: true
+    permalink: /notes/:path/
+  log:
+    output: true
+    permalink: /log/:path/
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: en
+  # Projects (Trackunit + mini projects)
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      toc: true
+      sidebar: false
+      classes: wide
+  # Notes
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      toc: true
+      sidebar: false
+      classes: wide
+  # Log
+  - scope:
+      path: ""
+      type: "log"
+    values:
+      toc: true
+      sidebar: false
+      classes: wide
+
+# NOTE: Each page or post not in English must have a 'lang' key in its front matter
+
+# Header/footer options
+breadcrumbs: true
+
+# Sidebar
+sidebar:
+  position: left
+
+# Profile
+profile:
+  name: "Anna Foldberg"
+  bio: "Backend-leaning engineer. Learning Microservices, Kubernetes, and IT Security."
+  avatar: "/assets/images/profile-picture.jpg" # add this image next step

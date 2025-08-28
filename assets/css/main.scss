@@ -1,0 +1,359 @@
+---
+---
+@charset "utf-8";
+
+/* 1) Load Minimal Mistakes (skin first, then framework) */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* =========================================================
+   Stream base
+   ========================================================= */
+#stream .stream-card { margin-bottom: 2rem; }
+.stream-title { margin: .25rem 0 .5rem; font-size: 1.25rem; font-weight: 700; line-height: 1.25; }
+.stream-divider { border: 0; border-top: 1px solid rgba(0,0,0,.12); margin: 1.25rem 0; }
+.stream-body img { max-width: 100%; height: auto; }
+
+.stream-meta {
+  font-size: .9rem;
+  opacity: .85;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  align-items: center;
+}
+.taxonomy-label { font-weight: 600; opacity: .8; }
+.taxonomy-list { list-style: none; margin: 0; padding: 0; display: inline-flex; flex-wrap: wrap; gap: .35rem; }
+
+/* Hide the built-in TOC block on compact pages (we use our own rail) */
+.compact-stream .toc { display: none !important; }
+
+/* =========================================================
+   Compact page typography
+   ========================================================= */
+.compact-stream {
+  .page__title { font-size: 1.6rem; margin-bottom: .75rem; line-height: 1.25; }
+  .page__content { font-size: 1rem; line-height: 1.55; }
+}
+
+/* =========================================================
+   Left rail card styles
+   ========================================================= */
+.lr-card {
+  background: var(--mm-surface, #fff);
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.lr-title { font-size: .9rem; font-weight: 700; letter-spacing: .02em; opacity: .8; margin-bottom: .5rem; }
+.lr-profile { text-align: center; }
+.lr-avatar { width: 88px; height: 88px; border-radius: 999px; object-fit: cover; display: block; margin: 0 auto .5rem; }
+.lr-name { font-weight: 800; }
+.lr-bio { font-size: .9rem; opacity: .8; }
+.lr-list { list-style: none; margin: 0; padding: 0; }
+.lr-list li { margin: .25rem 0; }
+
+/* Keep checkbox + text on one line in left rail */
+.lr-list label { display: inline-flex; align-items: center; gap: 0.4rem; line-height: 1.2; }
+.lr-list input[type="checkbox"] { margin: 0; flex: 0 0 auto; }
+
+/* =========================================================
+   Button: Clear filters
+   ========================================================= */
+:root {
+  --btn-text: var(--mm-text, #1a1a1a);
+  --btn-bg: var(--mm-surface, #fff);
+  --btn-border: rgba(0,0,0,.12);
+  --btn-bg-hover: rgba(0,0,0,.04);
+  --btn-bg-active: rgba(0,0,0,.08);
+  --btn-ring: 0 0 0 3px rgba(0,120,255,.25);
+}
+
+.lr-clear {
+  display: block;
+  width: 100%;
+  padding: .6rem .9rem;
+  border-radius: 12px;
+  border: 1px solid var(--btn-border);
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font: inherit;
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  transition: background .15s ease, box-shadow .15s ease, transform .02s ease;
+}
+.lr-clear:hover { background: var(--btn-bg-hover); }
+.lr-clear:active { background: var(--btn-bg-active); transform: translateY(.5px); }
+.lr-clear:focus-visible { outline: none; box-shadow: var(--btn-ring); }
+
+/* =========================================================
+   Page layout (two-column)
+   ========================================================= */
+:root {
+  --rail-max: 1400px;
+  --rail-pad: clamp(16px, 2.5vw, 32px);
+}
+.rail-page { padding-inline: var(--rail-pad); }
+.rail-container { margin-inline: auto; max-width: var(--rail-max); padding-inline: 0; }
+
+.rail-page {
+  padding-inline: var(--rail-pad);
+  padding-block-start: 1.25rem;
+  padding-block-end: 2rem;
+}
+
+.breadcrumbs { margin-bottom: 1rem; }
+.layout-2col { margin-top: .25rem; }
+
+.layout-2col {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.layout-2col > .left-rail { grid-column: 1; }
+.layout-2col > .page-main { grid-column: 2; }
+
+.left-rail { position: sticky; top: 5rem; align-self: start; }
+
+@media (max-width: 900px) {
+  .layout-2col { grid-template-columns: 1fr; }
+  .left-rail { position: static; margin-bottom: 1rem; }
+}
+
+/* =========================================================
+   Unified pill chips (left rail + stream + archives)
+   ========================================================= */
+.filter-chip,
+.taxonomy-item {
+  /* fallback vars (before JS runs) */
+  --chip-bg: hsl(210 12% 96%);
+  --chip-border: hsl(210 12% 70%);
+  --chip-fg: #374151;
+
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  text-decoration: none !important;
+  line-height: 1;
+  font-weight: 600;
+
+  background: var(--chip-bg);
+  color: var(--chip-fg);
+  border: 2px solid var(--chip-border);
+}
+
+.taxonomy-item {
+  display: inline-block; /* tags in stream are <li> */
+  padding: .22rem .6rem;
+  margin: 0 .25rem .25rem 0;
+}
+
+.left-rail .filter-chip,
+.taxonomy-item {
+  background-color: var(--chip-bg) !important;
+  border: 2px solid var(--chip-border) !important;
+  color: var(--chip-fg) !important;
+}
+
+/* Checkbox dot inside left-rail chips */
+.filter-chip input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px; height: 16px;
+  border-radius: 999px;
+  border: 2px solid var(--chip-border);
+  background: #fff;
+  margin: 0;
+  position: relative;
+  flex: 0 0 16px;
+}
+.filter-chip[data-checked="true"] input[type="checkbox"],
+.filter-chip input[type="checkbox"]:checked {
+  background: var(--chip-border);
+  border-color: var(--chip-border);
+  box-shadow: 0 0 0 2px #fff inset;
+}
+
+/* Minor UX touches */
+.taxonomy-item:hover,
+.filter-chip:hover { filter: brightness(0.98); }
+
+.stream-meta { align-items: center; gap: .5rem .75rem; }
+.taxonomy-label { font-size: .85rem; letter-spacing: .01em; opacity: .75; font-weight: 700; }
+.taxonomy-sep { opacity: .35; margin-inline: .25rem; }
+
+/* Ensure archive/tag anchors also look like chips */
+a.taxonomy-item { color: inherit; text-decoration: none !important; }
+
+/* =========================================================
+   Category-specific colors
+   ========================================================= */
+.filter-chip[data-filter="cat"][data-key="kubernetes"],
+.taxonomy-item[data-filter="cat"][data-key="kubernetes"] {
+  --chip-bg: hsl(210, 60%, 70%);
+  --chip-border: hsl(210, 60%, 55%);
+  --chip-fg: #fff;
+}
+
+.filter-chip[data-filter="cat"][data-key="microservices"],
+.taxonomy-item[data-filter="cat"][data-key="microservices"] {
+  --chip-bg: hsl(350, 65%, 72%);
+  --chip-border: hsl(350, 65%, 60%);
+  --chip-fg: #fff;
+}
+
+.filter-chip[data-filter="cat"][data-key="it-security"],
+.taxonomy-item[data-filter="cat"][data-key="it-security"] {
+  --chip-bg: hsl(45, 75%, 70%);
+  --chip-border: hsl(45, 75%, 55%);
+  --chip-fg: #111; /* better contrast on yellow */
+}
+
+.filter-chip[data-filter="cat"][data-key="trackunit"],
+.taxonomy-item[data-filter="cat"][data-key="trackunit"] {
+  --chip-bg: #E65244;
+  --chip-border: #c74438;
+  --chip-fg: #fff;
+}
+
+/* ======================================
+   Fixed colors for the 4 categories
+   ====================================== */
+
+/* kubernetes – soft blue */
+.filter-chip[data-filter="cat"][data-key="kubernetes"],
+.taxonomy-item[data-filter="cat"][data-key="kubernetes"] {
+  --chip-bg: #7AA7E0;    /* ~ hsl(210, 70%, 67%) */
+  --chip-border: #5E91D9;
+  --chip-fg: #fff;
+}
+
+/* microservices – green (not too neon) */
+.filter-chip[data-filter="cat"][data-key="microservices"],
+.taxonomy-item[data-filter="cat"][data-key="microservices"] {
+  --chip-bg: #74BC8C;    /* pleasant green */
+  --chip-border: #639A75;
+  --chip-fg: #fff;
+}
+
+/* it-security – yellowish with WHITE text */
+.filter-chip[data-filter="cat"][data-key="it-security"],
+.taxonomy-item[data-filter="cat"][data-key="it-security"] {
+  --chip-bg: #EAC968;    /* slightly deeper so white is readable */
+  --chip-border: #D4B358;
+  --chip-fg: #fff;
+}
+
+/* trackunit – exact brand color */
+.filter-chip[data-filter="cat"][data-key="trackunit"],
+.taxonomy-item[data-filter="cat"][data-key="trackunit"] {
+  --chip-bg: #DB7467;
+  --chip-border: #C1665A;
+  --chip-fg: #fff;
+}
+
+/* Ensure tag chips adopt JS-set variables (left rail + stream) */
+.filter-chip[data-filter="tag"],
+.taxonomy-item[data-filter="tag"] {
+  background-color: var(--chip-bg) !important;
+  border-color: var(--chip-border) !important;
+  color: var(--chip-fg) !important;
+}
+
+/* Global font for everything */
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Override for categories and tags */
+.filter-chip,
+.taxonomy-item {
+  font-family: "Google Sans Code", monospace;
+}
+
+/* Nunito everywhere in the masthead */
+.masthead, .masthead * { font-family: "Nunito", sans-serif !important; }
+
+/* Keep the greedy-nav layout happy */
+.greedy-nav { align-items: center; }
+
+/* Language switcher compact, placed beside title */
+.lang-switcher--masthead {
+  margin-left: .75rem;           /* space from “Portfolio” */
+  display: inline-flex;
+  align-items: center;
+}
+.lang-switcher--masthead .lang-switcher {
+  margin: 0 !important;          /* override inline margin in include */
+  font-size: .85rem;
+  line-height: 1;
+  display: inline-flex;
+  gap: .35rem;
+  white-space: nowrap;
+}
+.lang-switcher--masthead .lang-switcher a {
+  text-decoration: none;
+  opacity: .85;
+}
+.lang-switcher--masthead .lang-switcher a:hover { opacity: 1; text-decoration: underline; }
+
+/* Search icon — ensure size/contrast and remove font dependencies */
+.masthead .search__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; height: 32px;
+  padding: 0; border: 0; background: transparent;
+  color: #6b7280;                /* neutral gray; inherits on hover */
+}
+.masthead .search__toggle:hover { color: #374151; }
+.masthead .search__toggle svg {
+  width: 20px; height: 20px; display: block;
+}
+.masthead .search__toggle svg path {
+  fill: currentColor;            /* uses button color */
+}
+
+.lang-switcher a,
+.lang-switcher span {
+  margin: 0 0rem; /* even spacing */
+}
+
+.lang-switcher {
+  font-size: 0.75rem; /* make it smaller overall */
+}
+
+.site-footer {
+  display: none !important;
+}
+
+/* Breadcrumb styling */
+nav.breadcrumb {
+  margin: 0 0 1.5rem 0;   /* space underneath */
+  padding: 0.25rem 0;     /* some vertical breathing room */
+  font-size: 0.9rem;      /* slightly smaller than body text */
+  color: #5E5E5E;            /* muted text color */
+}
+
+nav.breadcrumb a {
+  color: var(--link-color, #00B7FF);
+  text-decoration: none;
+}
+
+nav.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+nav.breadcrumb .crumb-current {
+  font-weight: 600; /* bold current page */
+  color: #333;      /* darker than the link color */
+}

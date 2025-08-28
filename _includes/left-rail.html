@@ -1,0 +1,64 @@
+{%- comment -%}
+Left rail: profile + filter chips (categories + tags)
+Expects: page.collection_name (projects | notes | log)
+Respects language via site.active_lang (polyglot).
+{%- endcomment -%}
+
+{%- assign items = site[page.collection_name] | where: "lang", site.active_lang -%}
+
+{%- assign catset = "" | split: "" -%}
+{%- assign tagset = "" | split: "" -%}
+{%- for d in items -%}
+  {%- if d.categories -%}
+    {%- for c in d.categories -%}
+      {%- unless catset contains c -%}{%- assign catset = catset | push: c -%}{%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if d.tags -%}
+    {%- for t in d.tags -%}
+      {%- unless tagset contains t -%}{%- assign tagset = tagset | push: t -%}{%- endunless -%}
+    {%- endfor -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign catset = catset | sort -%}
+{%- assign tagset = tagset | sort -%}
+
+{%- assign L = site.data.locales[site.active_lang].left_rail -%}
+
+<div class="left-rail">
+  <div class="lr-card">
+    <div class="lr-title">{{ L.categories | default: "Categories" }}</div>
+    <ul class="lr-list">
+      {%- for c in catset -%}
+      {%- assign cslug = c | slugify -%}
+      {%- assign clabel = site.data.category_labels[site.active_lang][cslug] | default: c -%}
+      <li>
+        <label class="filter-chip" data-filter="cat" data-key="{{ cslug }}">
+          <input type="checkbox" class="cat-filter" value="{{ c }}">
+          {{ clabel }}
+        </label>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  <div class="lr-card">
+    <div class="lr-title">{{ L.tags | default: "Tags" }}</div>
+    <ul class="lr-list">
+      {%- for t in tagset -%}
+      {%- assign tslug = t | slugify -%}
+      {%- assign tlabel = site.data.tag_labels[site.active_lang][tslug] | default: t -%}
+      <li>
+        <label class="filter-chip" data-filter="tag" data-key="{{ tslug }}">
+          <input type="checkbox" class="tag-filter" value="{{ t }}">
+          {{ tlabel }}
+        </label>
+      </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  <button id="clear-filters" type="button" class="lr-clear">
+    {{ L.clear | default: "Clear filters" }}
+  </button>
+</div>

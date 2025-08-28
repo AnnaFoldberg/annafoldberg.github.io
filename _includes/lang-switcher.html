@@ -1,0 +1,82 @@
+{%- comment -%}
+Lang Switcher — click-to-bold (persists via localStorage)
+- EN → https://annafoldberg.github.io/ (JS-enforced, as before)
+- DA → /da/
+- IT → /it/
+- Whichever was last clicked is bold across pages until another is clicked
+{%- endcomment -%}
+
+<ul class="lang-switcher">
+  <li class="lang-item">
+    <a id="lang-en" data-lang="en" href="https://annafoldberg.github.io/" rel="external noopener noreferrer">EN</a>
+  </li>
+  <li class="lang-item">
+    <a id="lang-da" data-lang="da" href="/da/" hreflang="da">DA</a>
+  </li>
+  <li class="lang-item">
+    <a id="lang-it" data-lang="it" href="/it/" hreflang="it">IT</a>
+  </li>
+</ul>
+
+<style>
+/* Bold the active language link (no other styling changed) */
+.lang-switcher .is-active { font-weight: 700; }
+</style>
+
+<script>
+(function () {
+  var HOME_EN = 'https://annafoldberg.github.io/';
+  var KEY = 'activeLang';
+
+  var en = document.getElementById('lang-en');
+  var da = document.getElementById('lang-da');
+  var it = document.getElementById('lang-it');
+  var links = [en, da, it];
+
+  function setActive(code) {
+    links.forEach(function (a) {
+      if (!a) return;
+      a.classList.remove('is-active');
+      a.removeAttribute('aria-current');
+    });
+    var el = document.querySelector('.lang-switcher a[data-lang="' + code + '"]');
+    if (el) {
+      el.classList.add('is-active');
+      el.setAttribute('aria-current', 'true');
+    }
+    try { localStorage.setItem(KEY, code); } catch (_) {}
+  }
+
+  // Force EN to exact homepage URL (as before)
+  if (en) {
+    en.setAttribute('href', HOME_EN);
+    en.addEventListener('click', function (e) {
+      // Persist choice *before* navigating
+      setActive('en');
+      try { e.preventDefault(); } catch(_) {}
+      window.location.assign(HOME_EN);
+    }, { passive: false });
+    // Extra belt-and-suspenders for some interceptors
+    en.addEventListener('mousedown', function () { en.href = HOME_EN; });
+  }
+
+  // Persist DA/IT when clicked; let normal navigation happen
+  if (da) {
+    da.addEventListener('click', function () { setActive('da'); });
+  }
+  if (it) {
+    it.addEventListener('click', function () { setActive('it'); });
+  }
+
+  // On load: show whichever was last clicked; if none, infer from URL once
+  var stored = null;
+  try { stored = localStorage.getItem(KEY); } catch (_) {}
+  if (!stored) {
+    var p = (window.location.pathname || '').toLowerCase();
+    if (p === '/da' || p.indexOf('/da/') === 0) stored = 'da';
+    else if (p === '/it' || p.indexOf('/it/') === 0) stored = 'it';
+    else stored = 'en';
+  }
+  setActive(stored);
+})();
+</script>
