@@ -1,14 +1,27 @@
 {%- comment -%} Stream all items from the chosen collection, current language {%- endcomment -%}
 {%- assign coll = site[page.collection_name] | where: "lang", site.active_lang -%}
-{%- assign coll = coll | sort: "weight" -%}
+
+{%- comment -%} Split to avoid mixed-type comparisons {%- endcomment -%}
+{%- assign with_weight    = coll | where_exp: "d", "d.weight != nil" -%}
+{%- assign without_weight = coll | where_exp: "d", "d.weight == nil" -%}
+
+{%- comment -%} If some weights are accidentally strings, this still works as long as they’re consistent.
+    The _config default above makes them numeric. {%- endcomment -%}
+{%- assign with_weight = with_weight | sort: "weight" -%}
+
+{%- comment -%} Put items w/o weight after, alphabetically {%- endcomment -%}
+{%- assign without_weight = without_weight | sort_natural: "title" -%}
+
+{%- assign coll_sorted = with_weight | concat: without_weight -%}
 
 <div id="stream">
-  {%- for doc in coll -%}
+  {%- for doc in coll_sorted -%}
   <article class="stream-card"
            data-cats="{{ doc.categories | join: ' ' }}"
            data-tags="{{ doc.tags | join: ' ' }}">
-    <h2 class="stream-title">{{ doc.title }}</h2> <!-- keep without hyperlink as you do now -->
+    <h2 class="stream-title">{{ doc.title }}</h2>
     <h2>{{ doc.title }} (weight={{ doc.weight }})</h2>
+
     <div class="stream-meta">
       {%- assign has_cats = doc.categories | size | gt: 0 -%}
       {%- assign has_tags = doc.tags       | size | gt: 0 -%}
