@@ -79,9 +79,10 @@ breadcrumbs: true
 sidebar:
   position: left
 
-# Author
-author:
+# Profile
+profile:
   name: "Anna Foldberg"
   avatar: "/assets/images/profile-picture.png"
   linkedin: "https://www.linkedin.com/in/anna-foldberg/"
   github: "https://github.com/AnnaFoldberg"
+  project: "https://github.com/Team-2-Devs"
