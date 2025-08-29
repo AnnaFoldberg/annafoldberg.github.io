@@ -371,49 +371,39 @@ nav.breadcrumb .crumb-current {
 /* Name */
 .profile-name{ font-weight:700; font-size:1.125rem; margin:.25rem 0; }
 
-/* Links container: natural wrapping */
+/* Make the row wrap naturally */
 .profile-links{
   display:flex;
-  flex-wrap:wrap;              /* allow natural wrap */
+  flex-wrap:wrap;
   justify-content:center;
-  column-gap:.75rem;           /* spacing like the ‘good’ version */
+  column-gap:.6rem;    /* tighter horizontal gap */
   row-gap:.6rem;
-  margin-top:.25rem;
 }
 
-/* Pill buttons: force inline behavior so they don't stretch to full width */
+/* Compact pill; force inline dimensions */
 .left-rail.frontpage .profile-links .profile-link{
-  /* brandable color system */
-  --btn-fg:#2b6b77; --btn-bg:transparent; --btn-bd:var(--btn-fg);
-  --btn-fg-hover:#fff; --btn-bg-hover:var(--btn-fg); --btn-bd-hover:var(--btn-fg);
-
-  display:inline-flex;               /* inline pill */
+  display:inline-flex;
   align-items:center;
-  flex:0 0 auto;                     /* do not grow, do not take a whole row */
-  width:auto !important;             /* defeat any width:100% from theme */
-  flex-basis:auto !important;        /* defeat any flex-basis:100% */
+  flex:0 0 auto;              /* don't grow wide */
+  width:auto !important;      /* defeat width:100% from themes */
+  flex-basis:auto !important; /* defeat flex-basis:100% */
+
+  font-size:.85rem;           /* 💡 slightly smaller than before */
+  line-height:1.2;
+  padding:.32rem .8rem;       /* 💡 narrower padding */
   white-space:nowrap;
 
-  text-decoration:none;
-  font-size:.9rem;
-  line-height:1.2;
-  padding:.4rem .9rem;               /* original pill size */
-  border-radius:999px;
-
+  /* keep your color system */
+  --btn-fg:#2b6b77; --btn-bg:transparent; --btn-bd:var(--btn-fg);
+  --btn-fg-hover:#fff; --btn-bg-hover:var(--btn-fg); --btn-bd-hover:var(--btn-fg);
   color:var(--btn-fg);
   border:1.5px solid var(--btn-bd);
   background:var(--btn-bg);
-
+  border-radius:999px;
+  text-decoration:none;
   transition:background .15s ease, color .15s ease, border-color .15s ease;
 }
-.left-rail.frontpage .profile-links .profile-link:hover,
-.left-rail.frontpage .profile-links .profile-link:focus{
-  color:var(--btn-fg-hover);
-  background:var(--btn-bg-hover);
-  border-color:var(--btn-bd-hover);
-}
 
-/* Brand colors (text = border) */
 .left-rail.frontpage .profile-links .profile-link.link-linkedin  { --btn-fg:#0A66C2; }
 .left-rail.frontpage .profile-links .profile-link.link-github    { --btn-fg:#24292f; }
 .left-rail.frontpage .profile-links .profile-link.link-trackunit { --btn-fg:#E65244; }
