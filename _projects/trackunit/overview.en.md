@@ -1,8 +1,15 @@
 ---
-title: "Trackunit — Overview"
+title: "AI-Powered Machine Recognition App for Trackunit"
 categories: [trackunit, microservices, kubernetes, it-security]
-tags: [placeholder]
+tags: [overview]
 lang: en
+locale: en
 ref: project-trackunit-overview
 ---
-Nothing to see here yet — Trackunit project overview placeholder.
+##### Project
+Mobile application that uses AI to recognize construction machinery from images and provide relevant information to users.
+
+##### My Role
+Designing and implementing the backend architecture with a containerized microservices architecture orchestrated with Kubernetes, with strong emphasis on IT security to ensure safe handling of uploaded images, machine data, and inter-service communication.
+
+<small> **Technologies:** C#, .NET, MSSQL | **Tools:** Docker, Kubernetes, Git | **System Architecture:** Microservices | **Methods:** Agile, Kanbann</small>
