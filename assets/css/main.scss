@@ -369,50 +369,51 @@ nav.breadcrumb .crumb-current {
 .profile-avatar{ width:100%; height:100%; object-fit:cover; display:block; }
 
 /* Name */
-.profile-name{ font-weight:700; font-size:1.125rem; margin:.25rem 0 0; }
+.profile-name{ font-weight:700; font-size:1.125rem; margin:.25rem 0; }
 
-/* Links container */
-.profile-links {
-  display: flex;
-  flex-wrap: wrap;          /* allow natural wrapping */
-  justify-content: center;
-  gap: .25rem;              /* even spacing between pills */
-  margin-top: .25rem;
+/* Links container: natural wrapping */
+.profile-links{
+  display:flex;
+  flex-wrap:wrap;              /* allow natural wrap */
+  justify-content:center;
+  column-gap:.75rem;           /* spacing like the ‘good’ version */
+  row-gap:.6rem;
+  margin-top:.25rem;
 }
 
-/* Pill buttons */
-.left-rail.frontpage .profile-links .profile-link {
-  --btn-fg: #2b6b77; 
-  --btn-bg: transparent;
-  --btn-bd: var(--btn-fg);
-  --btn-fg-hover: #fff;
-  --btn-bg-hover: var(--btn-fg);
-  --btn-bd-hover: var(--btn-fg);
+/* Pill buttons: force inline behavior so they don't stretch to full width */
+.left-rail.frontpage .profile-links .profile-link{
+  /* brandable color system */
+  --btn-fg:#2b6b77; --btn-bg:transparent; --btn-bd:var(--btn-fg);
+  --btn-fg-hover:#fff; --btn-bg-hover:var(--btn-fg); --btn-bd-hover:var(--btn-fg);
 
-  text-decoration: none;
-  display: inline-block;
-  white-space: nowrap;
+  display:inline-flex;               /* inline pill */
+  align-items:center;
+  flex:0 0 auto;                     /* do not grow, do not take a whole row */
+  width:auto !important;             /* defeat any width:100% from theme */
+  flex-basis:auto !important;        /* defeat any flex-basis:100% */
+  white-space:nowrap;
 
-  font-size: .9rem;
-  line-height: 1.2;
-  padding: .4rem .9rem;      /* 👈 original pill size */
-  border-radius: 999px;
+  text-decoration:none;
+  font-size:.9rem;
+  line-height:1.2;
+  padding:.4rem .9rem;               /* original pill size */
+  border-radius:999px;
 
-  color: var(--btn-fg);
-  border: 1.5px solid var(--btn-bd);
-  background: var(--btn-bg);
+  color:var(--btn-fg);
+  border:1.5px solid var(--btn-bd);
+  background:var(--btn-bg);
 
-  transition: background .15s ease, color .15s ease, border-color .15s ease;
+  transition:background .15s ease, color .15s ease, border-color .15s ease;
 }
-
 .left-rail.frontpage .profile-links .profile-link:hover,
-.left-rail.frontpage .profile-links .profile-link:focus {
-  color: var(--btn-fg-hover);
-  background: var(--btn-bg-hover);
-  border-color: var(--btn-bd-hover);
+.left-rail.frontpage .profile-links .profile-link:focus{
+  color:var(--btn-fg-hover);
+  background:var(--btn-bg-hover);
+  border-color:var(--btn-bd-hover);
 }
 
-/* Brand colors */
+/* Brand colors (text = border) */
 .left-rail.frontpage .profile-links .profile-link.link-linkedin  { --btn-fg:#0A66C2; }
 .left-rail.frontpage .profile-links .profile-link.link-github    { --btn-fg:#24292f; }
 .left-rail.frontpage .profile-links .profile-link.link-trackunit { --btn-fg:#E65244; }
