@@ -15,10 +15,6 @@
       {{ site.profile.name | default: site.title }}
     </div>
 
-    <div class="profile-location">
-      <small>Treviso, Italy</small>
-    </div>
-
     <div class="profile-links">
       {%- assign li = site.profile.linkedin | default: site.social.linkedin -%}
       {%- assign gh = site.profile.github | default: site.social.github -%}
