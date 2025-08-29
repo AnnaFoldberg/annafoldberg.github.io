@@ -358,51 +358,86 @@ nav.breadcrumb .crumb-current {
   color: #333;      /* darker than the link color */
 }
 
+/* --- Profile card (left rail) --- */
 .left-rail.frontpage .profile-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .5rem;
+  gap: 0;                 /* control spacing with margins below */
   text-align: center;
   padding: 1.25rem;
 }
 
+/* Avatar */
 .profile-avatar-wrap {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: hidden;       /* rounds + clips the image */
+  margin-bottom: 0.75rem; /* space below photo */
 }
-
 .profile-avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 50%;
+  /* border-radius not needed because wrapper clips */
 }
 
+/* Name */
 .profile-name {
   font-weight: 700;
   font-size: 1.125rem;
+  margin: .25rem 0 0;     /* slight space above, tight to location */
 }
 
+/* Location */
 .profile-location {
   opacity: .75;
   font-size: .95rem;
+  margin: .125rem 0 1rem; /* close to name, further from buttons */
 }
+/* ensure <small> doesn’t shrink too much */
+.profile-location small { font-size: inherit; }
 
+/* Link buttons container */
 .profile-links {
   display: flex;
   gap: .75rem;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: .25rem;
 }
 
+/* Pill buttons + color system */
 .profile-link {
+  /* default theme (can be overridden per-link below) */
+  --btn-fg: #2b6b77;            /* text + border color */
+  --btn-bg: transparent;        /* background */
+  --btn-bd: var(--btn-fg);
+  --btn-fg-hover: #fff;
+  --btn-bg-hover: var(--btn-fg);
+  --btn-bd-hover: var(--btn-fg);
+
   text-decoration: none;
-  border: 1px solid currentColor;
-  padding: .25rem .6rem;
+  border: 1.5px solid var(--btn-bd);
+  color: var(--btn-fg);
+  background: var(--btn-bg);
+  padding: .4rem .9rem;
   border-radius: 999px;
   font-size: .9rem;
+  line-height: 1;
+  display: inline-block;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
+.profile-link:hover,
+.profile-link:focus {
+  color: var(--btn-fg-hover);
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-bd-hover);
+}
+
+/* Per-link custom colors */
+.link-linkedin  { --btn-fg: #0A66C2; }
+.link-github    { --btn-fg: #24292f; }
+.link-trackunit { --btn-fg: #E65244; }
