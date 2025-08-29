@@ -1,16 +1,15 @@
 {%- comment -%} Stream all items from the chosen collection, current language {%- endcomment -%}
 {%- assign coll = site[page.collection_name] | where: "lang", site.active_lang -%}
 
-{%- comment -%} Split to avoid mixed-type comparisons {%- endcomment -%}
+{%- comment -%}
+Split to avoid mixed-type comparisons. With the _config default above,
+everything should have a number, but this stays defensive.
+{%- endcomment -%}
 {%- assign with_weight    = coll | where_exp: "d", "d.weight != nil" -%}
 {%- assign without_weight = coll | where_exp: "d", "d.weight == nil" -%}
 
-{%- comment -%} If some weights are accidentally strings, this still works as long as they’re consistent.
-    The _config default above makes them numeric. {%- endcomment -%}
 {%- assign with_weight = with_weight | sort: "weight" -%}
-
-{%- comment -%} Put items w/o weight after, alphabetically {%- endcomment -%}
-{%- assign without_weight = without_weight | sort_natural: "title" -%}
+{%- assign without_weight = without_weight | sort: "title" -%}  {# use plain 'sort' for GH Pages #}
 
 {%- assign coll_sorted = with_weight | concat: without_weight -%}
 
