@@ -1,58 +1,56 @@
 {%- comment -%} Stream all items from the chosen collection, current language {%- endcomment -%}
-{%- assign coll = site[page.collection_name] | where: "lang", site.active_lang -%}
+{%- assign base = site[page.collection_name] -%}
 
-{%- comment -%}
-Split to avoid mixed-type comparisons. With the _config default above,
-everything should have a number, but this stays defensive.
-{%- endcomment -%}
-{%- assign with_weight    = coll | where_exp: "d", "d.weight != nil" -%}
-{%- assign without_weight = coll | where_exp: "d", "d.weight == nil" -%}
+{%- if base -%}
+  {%- assign coll = base | where: "lang", site.active_lang -%}
 
-{%- assign with_weight = with_weight | sort: "weight" -%}
-{%- assign without_weight = without_weight | sort: "title" -%}  {# use plain 'sort' for GH Pages #}
+  {%- comment -%} If every doc has numeric 'weight', simple sort works: {%- endcomment -%}
+  {%- assign coll = coll | sort: "weight" -%}
 
-{%- assign coll_sorted = with_weight | concat: without_weight -%}
+  <div id="stream">
+    {%- for doc in coll -%}
+    <article class="stream-card"
+             data-cats="{{ doc.categories | join: ' ' }}"
+             data-tags="{{ doc.tags | join: ' ' }}">
+      <h2 class="stream-title">{{ doc.title }}</h2>
+      <h2>{{ doc.title }} (weight={{ doc.weight }})</h2>
 
-<div id="stream">
-  {%- for doc in coll_sorted -%}
-  <article class="stream-card"
-           data-cats="{{ doc.categories | join: ' ' }}"
-           data-tags="{{ doc.tags | join: ' ' }}">
-    <h2 class="stream-title">{{ doc.title }}</h2>
-    <h2>{{ doc.title }} (weight={{ doc.weight }})</h2>
+      <div class="stream-meta">
+        {%- assign has_cats = doc.categories | size | gt: 0 -%}
+        {%- assign has_tags = doc.tags       | size | gt: 0 -%}
 
-    <div class="stream-meta">
-      {%- assign has_cats = doc.categories | size | gt: 0 -%}
-      {%- assign has_tags = doc.tags       | size | gt: 0 -%}
+        {%- if has_cats -%}
+          <span class="taxonomy-label">Categories:</span>
+          <ul class="taxonomy-list">
+            {%- for c in doc.categories -%}
+              <li class="taxonomy-item" data-filter="cat" data-key="{{ c | slugify }}">{{ c }}</li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
 
-      {%- if has_cats -%}
-        <span class="taxonomy-label">Categories:</span>
-        <ul class="taxonomy-list">
-          {%- for c in doc.categories -%}
-            <li class="taxonomy-item" data-filter="cat" data-key="{{ c | slugify }}">{{ c }}</li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
+        {%- if has_cats and has_tags -%}
+          <span class="taxonomy-sep" aria-hidden="true">|</span>
+        {%- endif -%}
 
-      {%- if has_cats and has_tags -%}
-        <span class="taxonomy-sep" aria-hidden="true">|</span>
-      {%- endif -%}
+        {%- if has_tags -%}
+          <span class="taxonomy-label">Tags:</span>
+          <ul class="taxonomy-list">
+            {%- for t in doc.tags -%}
+              <li class="taxonomy-item" data-filter="tag" data-key="{{ t | slugify }}">{{ t }}</li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      </div>
 
-      {%- if has_tags -%}
-        <span class="taxonomy-label">Tags:</span>
-        <ul class="taxonomy-list">
-          {%- for t in doc.tags -%}
-            <li class="taxonomy-item" data-filter="tag" data-key="{{ t | slugify }}">{{ t }}</li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
-    </div>
+      <div class="stream-body">
+        {{ doc.content }}
+      </div>
 
-    <div class="stream-body">
-      {{ doc.content }}
-    </div>
-
-    <hr class="stream-divider"/>
-  </article>
-  {%- endfor -%}
-</div>
+      <hr class="stream-divider"/>
+    </article>
+    {%- endfor -%}
+  </div>
+{%- else -%}
+  {# Optional: small debug hint while you test #}
+  <!-- collection "{{ page.collection_name }}" not found -->
+{%- endif -%}
