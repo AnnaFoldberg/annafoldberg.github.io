@@ -1,7 +1,7 @@
 ---
 title: "System Architecture"
 categories: [trackunit, microservices, kubernetes, it-security]
-tags: [overview]
+tags: [overview, architecture]
 lang: en
 locale: en
 ref: project-trackunit-architecture
@@ -16,12 +16,12 @@ Client → API Gateway → Upload Service → Store metadata about image in its 
 
 ##### Image Analysis
 Client → API Gateway → Analysis Service (orchestrates the workflow)
-Analysis → Upload (verify upload, get URL)
-Analysis → AI Image Service (infer on image URL)
-Analysis → AI Metadata Service (look up further metadata)
-Analysis → Metadata Service (match information to attributes)
-Analysis → Machine Service (store machine metadata in database)
-Analysis → store analysis result in its own database
+Analysis Service → Upload Service (verify upload, get URL)
+Analysis Service → AI Image Service (infer on image URL)
+Analysis Service → AI Metadata Service (look up further metadata)
+Analysis Service → Metadata Service (match information to attributes)
+Analysis Service → Machine Service (store machine metadata in database)
+Analysis Service → store analysis result in its own database
 → API Gateway → Client
 
 #### Read Existing Data
