@@ -1,5 +1,5 @@
 ---
-title: "Applicazione di riconoscimento delle macchine basata su AI per Trackunit"
+title: "App di riconoscimento macchinari basata su IA per Trackunit"
 categories: [trackunit, microservices, kubernetes, it-security]
 tags: [overview]
 lang: it
