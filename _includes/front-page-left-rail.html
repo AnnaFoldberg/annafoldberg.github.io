@@ -1,0 +1,44 @@
+{%- comment -%}
+Front page left rail: profile only
+Expects (optional, with sensible fallbacks):
+- site.author.name
+- site.author.avatar (URL)
+- site.author.linkedin (URL) or site.social.linkedin
+- site.author.github (URL) or site.social.github
+{%- endcomment -%}
+
+<div class="left-rail frontpage">
+  <div class="lr-card profile-card">
+    <div class="profile-avatar-wrap">
+      <img
+        class="profile-avatar"
+        src="{{ site.author.avatar | default: '/assets/images/profile-picture.png' }}"
+        alt="{{ site.author.name | default: site.title }}"
+        loading="lazy"
+        width="160"
+        height="160"
+      >
+    </div>
+
+    <div class="profile-name">
+      {{ site.author.name | default: site.title }}
+    </div>
+
+    <div class="profile-location">
+      Treviso, Italy
+    </div>
+
+    <div class="profile-links">
+      {%- assign li = site.author.linkedin | default: site.social.linkedin -%}
+      {%- assign gh = site.author.github | default: site.social.github -%}
+
+      {%- if li -%}
+      <a class="profile-link" href="{{ li }}" target="_blank" rel="me noopener">LinkedIn</a>
+      {%- endif -%}
+
+      {%- if gh -%}
+      <a class="profile-link" href="{{ gh }}" target="_blank" rel="me noopener">GitHub</a>
+      {%- endif -%}
+    </div>
+  </div>
+</div>

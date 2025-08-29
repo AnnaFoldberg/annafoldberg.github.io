@@ -82,5 +82,6 @@ sidebar:
 # Profile
 profile:
   name: "Anna Foldberg"
-  bio: "Backend-leaning engineer. Learning Microservices, Kubernetes, and IT Security."
-  avatar: "/assets/images/profile-picture.jpg" # add this image next step
+  avatar: "/assets/images/profile-picture.png"
+  linkedin: "https://www.linkedin.com/in/anna-foldberg/"
+  github: "https://github.com/AnnaFoldberg"
