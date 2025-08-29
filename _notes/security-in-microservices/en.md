@@ -4,7 +4,7 @@ categories: [microservices, it-security]
 tags: [overview]
 lang: en
 locale: en
-nav_order: 2
+weight: 2
 ref: note-microservices-security
 ---
 Security in a microservices architecture requires measures at both the service and infrastructure level. Each service is independently deployed, which means that authentication, communication, data protection, and observability must all be handled consistently across the system.

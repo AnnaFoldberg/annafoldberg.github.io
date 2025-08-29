@@ -4,7 +4,7 @@ categories: [microservices]
 tags: [architecture, tools]
 lang: it
 locale: it
-nav_order: 1
+weight: 1
 ref: note-microservices-basics
 ---
 Ogni microservizio gestisce una singola funzione di business end-to-end in modo indipendente dagli altri microservizi. Comunicano tra loro tramite protocolli comuni e leggeri come HTTP o message queues. In questo modo è possibile utilizzare linguaggi di programmazione diversi per ciascun microservizio.  

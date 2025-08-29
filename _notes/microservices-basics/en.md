@@ -4,7 +4,7 @@ categories: [microservices]
 tags: [architecture, tools]
 lang: en
 locale: en
-nav_order: 1
+weight: 1
 ref: note-microservices-basics
 ---
 Each microserivce deals with one business function end-to-end independently from other microservices. They communicate with each other through lightweight common protocols such as HTTP or message queues. Thereby, they allow use of different programming languages for each microservice.  

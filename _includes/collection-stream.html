@@ -1,12 +1,13 @@
 {%- comment -%} Stream all items from the chosen collection, current language {%- endcomment -%}
 {%- assign coll = site[page.collection_name] | where: "lang", site.active_lang -%}
+{%- assign coll = coll | sort: "weight" -%}
 
 <div id="stream">
   {%- for doc in coll -%}
   <article class="stream-card"
            data-cats="{{ doc.categories | join: ' ' }}"
            data-tags="{{ doc.tags | join: ' ' }}">
-    <h2 class="stream-title">{{ doc.title }}</h2> <!-- no hyperlink -->
+    <h2 class="stream-title">{{ doc.title }}</h2> <!-- keep without hyperlink as you do now -->
 
     <div class="stream-meta">
       {%- assign has_cats = doc.categories | size | gt: 0 -%}
