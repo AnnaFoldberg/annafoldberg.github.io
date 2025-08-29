@@ -11,4 +11,4 @@ Mobilapplikation, der bruger AI til at genkende byggemaskiner ud fra billeder og
 ##### Min rolle
 Design og implementering af backend-arkitekturen baseret på containeriserede microservices orkestreret med Kubernetes, med stærkt fokus på IT-sikkerhed for at garantere sikker håndtering af uploadede billeder, maskindata og kommunikation mellem services.
 
-<small> Teknologier: C#, .NET, MSSQL | Værktøjer: Docker, Kubernetes, GitHub | Systemarkitektur: Microservices | Metoder: Agile, Kanban</small>
+<small> **Teknologier:** C#, .NET, MSSQL | **Værktøjer:** Docker, Kubernetes, GitHub | **Systemarkitektur:** Microservices | **Metoder:** Agile, Kanban</small>
