@@ -3,7 +3,7 @@
 
 {%- if base -%}
   {%- assign coll = base | where: "lang", site.active_lang -%}
-  {%- assign coll = coll | sort: "weight" | reverse -%}  {# highest weight first #}
+  {%- assign coll = coll | sort: "nav_order" | reverse -%}
 
   <div id="stream">
     {%- for doc in coll -%}

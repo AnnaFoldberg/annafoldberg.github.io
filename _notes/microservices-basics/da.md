@@ -4,7 +4,7 @@ categories: [microservices]
 tags: [architecture, tools]
 lang: da
 locale: da
-weight: 1
+nav_order: 1
 ref: note-microservices-basics
 ---
 Hver microservice håndterer én forretningsfunktion fra start til slut uafhængigt af andre microservices. De kommunikerer med hinanden gennem letvægts, fælles protokoller såsom HTTP eller message queues. Dermed muliggør de brugen af forskellige programmeringssprog til hver mikroservice.  

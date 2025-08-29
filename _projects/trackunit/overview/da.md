@@ -4,7 +4,7 @@ categories: [trackunit, microservices, kubernetes, it-security]
 tags: [overview]
 lang: da
 locale: da
-weight: 1
+nav_order: 1
 ref: project-trackunit-overview
 ---
 ##### Projekt

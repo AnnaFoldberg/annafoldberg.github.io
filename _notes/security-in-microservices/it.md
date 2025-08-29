@@ -4,7 +4,7 @@ categories: [microservices, it-security]
 tags: [overview]
 lang: it
 locale: it
-weight: 2
+nav_order: 2
 ref: note-microservices-security
 ---
 La sicurezza in un’architettura a microservizi richiede misure sia a livello di servizio sia a livello di infrastruttura. Ogni servizio è distribuito in modo indipendente, il che significa che autenticazione, autorizzazione, protezione dei dati e observability devono essere gestite in modo coerente in tutto il sistema.
