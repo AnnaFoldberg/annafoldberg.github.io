@@ -24,15 +24,15 @@
       {%- assign gh = site.profile.github | default: site.social.github -%}
 
       {%- if li -%}
-      <a class="profile-link" href="{{ li }}" target="_blank" rel="me noopener">LinkedIn</a>
+      <a class="profile-link link-linkedin" href="{{ li }}" target="_blank" rel="me noopener">LinkedIn</a>
       {%- endif -%}
 
       {%- if gh -%}
-      <a class="profile-link" href="{{ gh }}" target="_blank" rel="me noopener">GitHub</a>
+      <a class="profile-link link-github" href="{{ gh }}" target="_blank" rel="me noopener">GitHub</a>
       {%- endif -%}
 
       {%- if site.profile.project -%}
-      <a class="profile-link" href="{{ site.profile.group }}" target="_blank" rel="noopener">
+      <a class="profile-link link-trackunit" href="{{ site.profile.project }}" target="_blank" rel="noopener">
       Trackunit Project
       </a>
       {%- endif -%}

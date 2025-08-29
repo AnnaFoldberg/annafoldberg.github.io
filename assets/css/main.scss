@@ -363,7 +363,7 @@ nav.breadcrumb .crumb-current {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0;                 /* control spacing with margins below */
+  gap: 0;
   text-align: center;
   padding: 1.25rem;
 }
@@ -373,47 +373,43 @@ nav.breadcrumb .crumb-current {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  overflow: hidden;       /* rounds + clips the image */
-  margin-bottom: 0.75rem; /* space below photo */
+  overflow: hidden;
+  margin-bottom: 0.75rem;
 }
 .profile-avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-  /* border-radius not needed because wrapper clips */
 }
 
 /* Name */
 .profile-name {
   font-weight: 700;
   font-size: 1.125rem;
-  margin: .25rem 0 0;     /* slight space above, tight to location */
+  margin: .25rem 0 0;
 }
 
-/* Location */
+/* Location (smaller text than name) */
 .profile-location {
   opacity: .75;
-  font-size: .95rem;
-  margin: .125rem 0 1rem; /* close to name, further from buttons */
+  font-size: 0.85rem;    /* 👈 smaller than name */
+  margin: .125rem 0 1rem;
 }
-/* ensure <small> doesn’t shrink too much */
-.profile-location small { font-size: inherit; }
 
 /* Link buttons container */
 .profile-links {
   display: flex;
   gap: .75rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;     /* 👈 keep in one line */
   justify-content: center;
   margin-top: .25rem;
 }
 
 /* Pill buttons + color system */
 .profile-link {
-  /* default theme (can be overridden per-link below) */
-  --btn-fg: #2b6b77;            /* text + border color */
-  --btn-bg: transparent;        /* background */
+  --btn-fg: #2b6b77;
+  --btn-bg: transparent;
   --btn-bd: var(--btn-fg);
   --btn-fg-hover: #fff;
   --btn-bg-hover: var(--btn-fg);
