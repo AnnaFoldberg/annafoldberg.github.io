@@ -12,7 +12,7 @@ Vi ser vores projekt som bestående af tre hovedprocesser, hver med et specifikt
 ##### Billedupload
 Client → API Gateway → Upload Service (opret pre-signed URL)  
 Client → Object storage (gem billede)  
-Client → API Gateway → Upload Service → Gem metadata om billedet i sin egen database  
+Client → API Gateway → Upload Service → Gem metadata om billedet i sin egen database
 
 ##### Billedanalyse
 Client → API Gateway → Analysis Service (orkestrerer workflowet)  
