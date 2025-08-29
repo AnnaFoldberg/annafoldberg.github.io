@@ -4,6 +4,7 @@ categories: [trackunit, microservices, kubernetes, it-security]
 tags: [overview, architecture]
 lang: it
 locale: it
+nav_order: 2
 ref: project-trackunit-architecture
 ---
 ![Diagramma dell'architettura](../../../assets/images/architecture.png)

@@ -4,6 +4,7 @@ categories: [microservices, it-security]
 tags: [overview]
 lang: da
 locale: da
+nav_order: 2
 ref: note-microservices-security
 ---
 Sikkerhed i en microservices-arkitektur kræver tiltag både på service- og infrastrukturniveau. Hver service udrulles uafhængigt, hvilket betyder, at autentificering, autorisation, databeskyttelse og observality skal håndteres konsekvent på tværs af systemet.
