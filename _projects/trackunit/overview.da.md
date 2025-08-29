@@ -3,6 +3,7 @@ title: "AI-drevet maskingenkendelsesapp til Trackunit"
 categories: [trackunit, microservices, kubernetes, it-security]
 tags: [overview]
 lang: da
+locale: da
 ref: project-trackunit-overview
 ---
 ##### Projekt
