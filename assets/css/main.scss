@@ -388,9 +388,9 @@ nav.breadcrumb .crumb-current {
   width:auto !important;      /* defeat width:100% from themes */
   flex-basis:auto !important; /* defeat flex-basis:100% */
 
-  font-size:.85rem;           /* 💡 slightly smaller than before */
+  font-size:.85rem;
   line-height:1.2;
-  padding:.32rem .8rem;       /* 💡 narrower padding */
+  padding:.32rem .8rem;
   white-space:nowrap;
 
   /* keep your color system */
@@ -402,6 +402,14 @@ nav.breadcrumb .crumb-current {
   border-radius:999px;
   text-decoration:none;
   transition:background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.left-rail.frontpage .profile-links .profile-link:hover,
+.left-rail.frontpage .profile-links .profile-link:focus {
+  color: var(--btn-fg-hover);
+  background: var(--btn-bg-hover);
+  border-color: var(--btn-bd-hover);
+  cursor: pointer; /* optional: makes the mouse a hand on hover */
 }
 
 .left-rail.frontpage .profile-links .profile-link.link-linkedin  { --btn-fg:#0A66C2; }
