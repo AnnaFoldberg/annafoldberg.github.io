@@ -359,81 +359,59 @@ nav.breadcrumb .crumb-current {
 }
 
 /* --- Profile card (left rail) --- */
-.left-rail.frontpage .profile-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0;
-  text-align: center;
-  padding: 1.25rem;
+.left-rail.frontpage .profile-card{
+  display:flex; flex-direction:column; align-items:center;
+  gap:0; text-align:center; padding:1.25rem;
 }
 
 /* Avatar */
-.profile-avatar-wrap {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 0.75rem;
+.profile-avatar-wrap{
+  width:160px; height:160px; border-radius:50%; overflow:hidden;
+  margin-bottom:.75rem;
 }
-.profile-avatar {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
+.profile-avatar{ width:100%; height:100%; object-fit:cover; display:block; }
 
 /* Name */
-.profile-name {
-  font-weight: 700;
-  font-size: 1.125rem;
-  margin: .25rem 0 0;
+.profile-name{
+  font-weight:700; font-size:1.125rem;
+  margin:.2rem 0 0;                 /* slightly tighter */
 }
 
-/* Location (smaller text than name) */
-.profile-location {
-  opacity: .75;
-  font-size: 0.85rem;    /* 👈 smaller than name */
-  margin: .125rem 0 1rem;
+/* Location (a bit bigger & closer) */
+.profile-location{
+  opacity:.75; font-size:1rem;      /* ↑ from .95/.85 to be slightly bigger */
+  margin:.15rem 0 .85rem;           /* closer to name, still above buttons */
 }
 
-/* Link buttons container */
-.profile-links {
-  display: flex;
-  gap: .75rem;
-  flex-wrap: nowrap;     /* 👈 keep in one line */
-  justify-content: center;
-  margin-top: .25rem;
+/* Links container */
+.profile-links{
+  display:flex; gap:.75rem; flex-wrap:wrap;   /* allow wrapping */
+  justify-content:center; align-items:center;
+  margin-top:.2rem;
 }
 
-/* Pill buttons + color system */
-.profile-link {
-  --btn-fg: #2b6b77;
-  --btn-bg: transparent;
-  --btn-bd: var(--btn-fg);
-  --btn-fg-hover: #fff;
-  --btn-bg-hover: var(--btn-fg);
-  --btn-bd-hover: var(--btn-fg);
+/* Pill buttons (text color = border color) */
+.profile-link{
+  --btn-fg:#2b6b77;
+  --btn-bg:transparent; --btn-bd:var(--btn-fg);
+  --btn-fg-hover:#fff; --btn-bg-hover:var(--btn-fg); --btn-bd-hover:var(--btn-fg);
 
-  text-decoration: none;
-  border: 1.5px solid var(--btn-bd);
-  color: var(--btn-fg);
-  background: var(--btn-bg);
-  padding: .4rem .9rem;
-  border-radius: 999px;
-  font-size: .9rem;
-  line-height: 1;
-  display: inline-block;
-  transition: background .15s ease, color .15s ease, border-color .15s ease;
+  display:inline-block; text-decoration:none;
+  color:var(--btn-fg); border:1.5px solid var(--btn-bd); background:var(--btn-bg);
+  padding:.4rem .9rem; border-radius:999px; font-size:.9rem; line-height:1;
+  transition:background .15s ease, color .15s ease, border-color .15s ease;
 }
-.profile-link:hover,
-.profile-link:focus {
-  color: var(--btn-fg-hover);
-  background: var(--btn-bg-hover);
-  border-color: var(--btn-bd-hover);
+.profile-link:hover,.profile-link:focus{
+  color:var(--btn-fg-hover); background:var(--btn-bg-hover); border-color:var(--btn-bd-hover);
 }
 
-/* Per-link custom colors */
-.link-linkedin  { --btn-fg: #0A66C2; }
-.link-github    { --btn-fg: #24292f; }
-.link-trackunit { --btn-fg: #E65244; }
+/* Brand colors */
+.link-linkedin { --btn-fg:#0A66C2; }
+.link-github   { --btn-fg:#24292f; }
+.link-trackunit{ --btn-fg:#E65244; }
+
+/* Force Trackunit onto its own line */
+.link-trackunit{
+  flex-basis:100%;                   /* take full row */
+  text-align:center;                 /* center the pill on that row */
+}
