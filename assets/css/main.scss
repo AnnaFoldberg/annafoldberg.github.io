@@ -371,53 +371,39 @@ nav.breadcrumb .crumb-current {
 /* Name */
 .profile-name{ font-weight:700; font-size:1.125rem; margin:.25rem 0 0; }
 
-/* Location — slightly closer & a touch smaller than before */
-.profile-location{ opacity:.75; font-size:.9rem; margin:.08rem 0 .8rem; }
+/* Location: slightly closer + a hair smaller */
+.profile-location{ opacity:.75; font-size:.88rem; margin:.06rem 0 .75rem; }
 
-/* Links row: two pills on first row, Trackunit below */
+/* Links: keep first two on one row, Trackunit on its own row */
 .profile-links{
   display:flex; flex-wrap:wrap; justify-content:center;
-  gap:.6rem 1rem;           /* spacing like your older look */
+  gap:.55rem .9rem;              /* compact like your earlier look */
   margin-top:.2rem;
 }
-/* Insert a flex break before Trackunit so it sits on its own line */
 .profile-links::after{ content:""; flex-basis:100%; order:1; }
-.link-linkedin,.link-github{ order:0; }
+.link-linkedin, .link-github{ order:0; }
 .link-trackunit{ order:2; }
 
-/* Pill buttons (use high specificity so theme styles don't override) */
+/* Pills */
 .left-rail.frontpage .profile-links .profile-link{
-  /* color system */
-  --btn-fg:#2b6b77;               /* default if no override */
-  --btn-bg:transparent;
-  --btn-bd:var(--btn-fg);
-  --btn-fg-hover:#fff;
-  --btn-bg-hover:var(--btn-fg);
-  --btn-bd-hover:var(--btn-fg);
+  /* default (overridden below per link) */
+  --btn-fg:#2b6b77; --btn-bg:transparent; --btn-bd:var(--btn-fg);
+  --btn-fg-hover:#fff; --btn-bg-hover:var(--btn-fg); --btn-bd-hover:var(--btn-fg);
 
-  display:inline-block;
-  white-space:nowrap;
-  text-decoration:none;
-  font-size:.95rem;               /* compact like the older look */
-  line-height:1.1;
-  padding:.35rem 1rem;            /* compact pill size */
-  border-radius:999px;
-
-  /* ensure text color matches border color */
-  color:var(--btn-fg);
-  border:1.5px solid var(--btn-bd);
-  background:var(--btn-bg);
-
+  display:inline-block; white-space:nowrap; text-decoration:none;
+  font-size:.95rem; line-height:1.1;
+  padding:.33rem .95rem;         /* slightly narrower so two fit on one line */
+  border-radius:999px; border:1.5px solid var(--btn-bd);
+  color:var(--btn-fg); background:var(--btn-bg);
+  flex:0 1 auto;                 /* allow shrinking instead of wrapping */
   transition:background .15s ease, color .15s ease, border-color .15s ease;
 }
 .left-rail.frontpage .profile-links .profile-link:hover,
 .left-rail.frontpage .profile-links .profile-link:focus{
-  color:var(--btn-fg-hover);
-  background:var(--btn-bg-hover);
-  border-color:var(--btn-bd-hover);
+  color:var(--btn-fg-hover); background:var(--btn-bg-hover); border-color:var(--btn-bd-hover);
 }
 
-/* Per-link brand colors (text = border) */
-.link-linkedin  { --btn-fg:#0A66C2; }
-.link-github    { --btn-fg:#24292f; }
-.link-trackunit { --btn-fg:#E65244; }
+/* Brand colors — increase specificity so they override the defaults above */
+.left-rail.frontpage .profile-links .profile-link.link-linkedin  { --btn-fg:#0A66C2; }
+.left-rail.frontpage .profile-links .profile-link.link-github    { --btn-fg:#24292f; }
+.left-rail.frontpage .profile-links .profile-link.link-trackunit { --btn-fg:#E65244; }
