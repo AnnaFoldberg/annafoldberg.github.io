@@ -16,7 +16,7 @@
     </div>
 
     <div class="profile-location">
-      Treviso, Italy
+      <small>Treviso, Italy</small>
     </div>
 
     <div class="profile-links">
@@ -29,6 +29,12 @@
 
       {%- if gh -%}
       <a class="profile-link" href="{{ gh }}" target="_blank" rel="me noopener">GitHub</a>
+      {%- endif -%}
+
+      {%- if site.profile.project -%}
+      <a class="profile-link" href="{{ site.profile.group }}" target="_blank" rel="noopener">
+      Trackunit Project
+      </a>
       {%- endif -%}
     </div>
   </div>
