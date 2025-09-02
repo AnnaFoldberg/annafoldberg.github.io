@@ -1,5 +1,5 @@
 ---
-title: "Guida Rapida a RabbitMQ"
+title: "RabbitMQ: Quickstart Guide"
 categories: [microservices]
 tags: [rabbitmq, guide]
 lang: it
