@@ -7,7 +7,7 @@ locale: da
 nav_order: 2
 ref: project-trackunit-architecture
 ---
-![Arkitekturdiagram](../../../assets/images/architecture.png)
+![Arkitekturdiagram](../../../assets/images/projects/trackunit/architecture/architecture.png)
 Vi ser vores projekt som bestående af tre hovedprocesser, hver med et specifikt call flow:
 
 ##### Billedupload

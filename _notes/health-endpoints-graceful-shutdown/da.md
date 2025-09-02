@@ -12,7 +12,7 @@ ref: note-health-endpoints-graceful-shutdown
 - **Readiness:** Kan jeg håndtere trafik? Hvis false sættes trafikken på pause (f.eks. under opstart eller når afhængigheder er nede)  
 - **Startup** (valgfri): Har jeg afsluttet opstarten?  
 
-Eksempel:  
+Eksempel:
 - /healthz (liveness): returnerer 200 hvis main loopet kører  
 - /readyz (readiness): returnerer 200 kun hvis DB/cache/message-bus tjekket består  
 

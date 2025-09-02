@@ -12,7 +12,7 @@ ref: note-health-endpoints-graceful-shutdown
 - **Readiness:** Posso servire traffico? Se falso, il traffico viene sospeso (ad es. durante l’avvio o quando le dipendenze non sono disponibili)  
 - **Startup** (opzionale): Ho terminato l’avvio?  
 
-Esempio:  
+Esempio:
 - /healthz (liveness): restituisce 200 se il loop principale è in esecuzione  
 - /readyz (readiness): restituisce 200 solo se i controlli su DB/cache/message-bus vanno a buon fine  
 

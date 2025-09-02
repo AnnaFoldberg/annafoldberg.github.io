@@ -1,5 +1,5 @@
 ---
-title: "System Architecture"
+title: "Trackunit: System Architecture"
 categories: [trackunit, microservices]
 tags: [overview, architecture]
 lang: en
@@ -7,7 +7,7 @@ locale: en
 nav_order: 2
 ref: project-trackunit-architecture
 ---
-![Architecture diagram](../../../assets/images/architecture.png)
+![Architecture diagram](../../../assets/images/projects/trackunit/architecture/architecture.png)
 We see our project as having three main processes, each with a specific call flow:
 
 ##### Image Upload

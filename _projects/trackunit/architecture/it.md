@@ -1,5 +1,5 @@
 ---
-title: "Architettura di sistema"
+title: "Trackunit: Architettura di sistema"
 categories: [trackunit, microservices]
 tags: [overview, architecture]
 lang: it
@@ -7,7 +7,7 @@ locale: it
 nav_order: 2
 ref: project-trackunit-architecture
 ---
-![Diagramma dell'architettura](../../../assets/images/architecture.png)
+![Diagramma dell'architettura](../../../assets/images/projects/trackunit/architecture/architecture.png)
 Consideriamo il nostro progetto come composto da tre processi principali, ciascuno con un flusso di chiamate specifico:
 
 ##### Caricamento delle immagini

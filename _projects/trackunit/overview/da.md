@@ -1,5 +1,5 @@
 ---
-title: "AI-drevet maskingenkendelsesapp til Trackunit"
+title: "Trackunit: AI-drevet maskingenkendelsesapp"
 categories: [trackunit, microservices, kubernetes, it-security]
 tags: [overview]
 lang: da
