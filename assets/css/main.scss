@@ -461,3 +461,17 @@ table code {
     color: #111 !important;
   }
 }
+
+/* Darken code text without killing syntax highlighting */
+figure.highlight,
+div.highlighter-rouge,
+pre.highlight,
+.highlight pre,
+.highlight code,
+pre code,
+code.highlighter-rouge {
+  background: #f8f8f8 !important;
+  font-weight: 500;              /* slightly bolder text */
+  color: inherit !important;     /* let Rouge keep its syntax colors */
+  text-shadow: none !important;  /* remove any "glow" effect */
+}
