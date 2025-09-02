@@ -1,6 +1,6 @@
 ---
 title: "Systemarkitektur"
-categories: [trackunit, microservices, kubernetes, it-security]
+categories: [trackunit, microservices]
 tags: [overview, architecture]
 lang: da
 locale: da

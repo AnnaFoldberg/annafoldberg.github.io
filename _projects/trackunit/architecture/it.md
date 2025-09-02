@@ -1,6 +1,6 @@
 ---
 title: "Architettura di sistema"
-categories: [trackunit, microservices, kubernetes, it-security]
+categories: [trackunit, microservices]
 tags: [overview, architecture]
 lang: it
 locale: it
@@ -25,6 +25,6 @@ Analysis Service → Machine Service (salva i metadati della macchina nel databa
 Analysis Service → salva il risultato dell’analisi nel proprio database  
 → API Gateway → Client
 
-#### Lettura dei dati esistenti
+##### Lettura dei dati esistenti
 Client → API Gateway → Machine Service (possiede il database delle macchine, fornisce operazioni CRUD)  
 → API Gateway → Client
