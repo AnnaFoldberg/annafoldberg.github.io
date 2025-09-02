@@ -415,3 +415,7 @@ nav.breadcrumb .crumb-current {
 .left-rail.frontpage .profile-links .profile-link.link-linkedin  { --btn-fg:#0A66C2; }
 .left-rail.frontpage .profile-links .profile-link.link-github    { --btn-fg:#24292f; }
 .left-rail.frontpage .profile-links .profile-link.link-trackunit { --btn-fg:#E65244; }
+
+pre, code {
+  background-color: #f8f8f8 !important; /* lys grå/hvid baggrund */
+}
