@@ -22,6 +22,6 @@ L’applicazione gira sul seguente setup:
 Questo approccio è molto più leggero delle VM. Non dovendo gestire un sistema operativo guest, abbiamo soltanto le librerie e l’applicazione stessa. Poiché non dobbiamo duplicare le dipendenze del sistema operativo né creare VM, utilizziamo meno risorse.  
 ⇒ Restano quindi ancora buone quantità di risorse disponibili  
 
-Se i processi del container non utilizzano CPU o memoria, tutte le risorse condivise diventano accessibili agli altri container in esecuzione sullo stesso hardware.  
+Se i processi del container non utilizzano CPU o memoria, tutte le risorse condivise diventano accessibili agli altri container in esecuzione sullo stesso hardware.
 
-<small> Source: [YouTube](https://www.youtube.com/watch?v=0qotVMX-J5s)</small>
+<small> Fonte: [YouTube](https://www.youtube.com/watch?v=0qotVMX-J5s)</small>

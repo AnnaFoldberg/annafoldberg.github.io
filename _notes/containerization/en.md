@@ -22,6 +22,6 @@ That application runs on the following setup:
 This will be much more lightweight than VMs. Since you don’t have to worry about a guest OS, we just have the libraries and the application itself. Because we don’t have to duplicate operating system dependencies and create the VMs, we will use less ressources.  
 ⇒ We still have a good amount of ressources left  
 
-If the container processes aren’t utilizing the CPU or memory, all the shared ressources become accessible for the other containers running within that hardware.  
+If the container processes aren’t utilizing the CPU or memory, all the shared ressources become accessible for the other containers running within that hardware.
 
 <small> Source: [YouTube](https://www.youtube.com/watch?v=0qotVMX-J5s)</small>

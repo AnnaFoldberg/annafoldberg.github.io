@@ -22,6 +22,6 @@ Applikationen kører oven på følgende opsætning:
 Dette vil være meget mere letvægts end VM’er. Da man ikke skal bekymre sig om et gæste-OS, har vi kun bibliotekerne og selve applikationen. Fordi vi ikke behøver at duplikere operativsystem-afhængigheder og oprette VM’er, bruger vi færre ressourcer.  
 ⇒ Vi har derfor stadig en god mængde ressourcer tilbage  
 
-Hvis containerprocesserne ikke bruger CPU eller hukommelse, bliver alle de delte ressourcer tilgængelige for de andre containere, der kører på den samme hardware.  
+Hvis containerprocesserne ikke bruger CPU eller hukommelse, bliver alle de delte ressourcer tilgængelige for de andre containere, der kører på den samme hardware.
 
-<small> Source: [YouTube](https://www.youtube.com/watch?v=0qotVMX-J5s)</small>
+<small> Kilde: [YouTube](https://www.youtube.com/watch?v=0qotVMX-J5s)</small>

@@ -1,7 +1,7 @@
 ---
 title: "Operazioni idempotenti"
 categories: [microservices, kubernetes]
-tags: [idempotency, reliability, best practices, patterns]
+tags: [idempotency, reliability, patterns, best-practices]
 lang: it
 locale: it
 nav_order: 4
