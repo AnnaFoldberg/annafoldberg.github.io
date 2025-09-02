@@ -475,3 +475,8 @@ code.highlighter-rouge {
   color: inherit !important;     /* let Rouge keep its syntax colors */
   text-shadow: none !important;  /* remove any "glow" effect */
 }
+
+figure.highlight,
+div.highlighter-rouge {
+  filter: contrast(1.2);  /* boost contrast */
+}
