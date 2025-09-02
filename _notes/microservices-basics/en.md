@@ -1,7 +1,7 @@
 ---
 title: "Microservices Basics"
 categories: [microservices]
-tags: [basics, architecture, tools]
+tags: [overview, architecture, tools]
 lang: en
 locale: en
 nav_order: 1

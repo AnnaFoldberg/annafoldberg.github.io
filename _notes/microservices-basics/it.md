@@ -1,7 +1,7 @@
 ---
 title: "Fondamenti dei Microservizi"
 categories: [microservices]
-tags: [basics, architecture, tools]
+tags: [overview, architecture, tools]
 lang: it
 locale: it
 nav_order: 1

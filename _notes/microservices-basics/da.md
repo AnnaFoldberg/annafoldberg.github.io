@@ -1,7 +1,7 @@
 ---
 title: "Grundlæggende om microservices"
 categories: [microservices]
-tags: [basics, architecture, tools]
+tags: [overview, architecture, tools]
 lang: da
 locale: da
 nav_order: 1

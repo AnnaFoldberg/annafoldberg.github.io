@@ -416,6 +416,48 @@ nav.breadcrumb .crumb-current {
 .left-rail.frontpage .profile-links .profile-link.link-github    { --btn-fg:#24292f; }
 .left-rail.frontpage .profile-links .profile-link.link-trackunit { --btn-fg:#E65244; }
 
-pre, code {
-  background-color: #f8f8f8 !important; /* lys grå/hvid baggrund */
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+/* ↓ Your overrides go AFTER the imports ↓ */
+
+/* Force light backgrounds for code blocks (Rouge) */
+figure.highlight,
+div.highlighter-rouge,
+pre.highlight,
+.highlight pre,
+.highlight code,
+pre code,
+code.highlighter-rouge {
+  background: #f8f8f8 !important;
+  color: #111 !important;
+  text-shadow: none !important;
+}
+
+/* Inline code (in paragraphs/lists) */
+p code,
+li code,
+table code {
+  background: #f1f1f1 !important;
+  color: #111 !important;
+  padding: .1em .3em;
+  border-radius: .25rem;
+}
+
+/* Some skins switch to dark via prefers-color-scheme.
+   Re-assert light backgrounds even in dark mode. */
+@media (prefers-color-scheme: dark) {
+  figure.highlight,
+  div.highlighter-rouge,
+  pre.highlight,
+  .highlight pre,
+  .highlight code,
+  pre code,
+  code.highlighter-rouge,
+  p code,
+  li code,
+  table code {
+    background: #f8f8f8 !important;
+    color: #111 !important;
+  }
 }
