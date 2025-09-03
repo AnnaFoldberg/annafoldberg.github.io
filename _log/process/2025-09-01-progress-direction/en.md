@@ -1,5 +1,5 @@
 ---
-title: "2025-09-01: Progress & Direction"
+title: "2025-09-01: Progress and Direction"
 categories: [microservices, kubernetes, it-security]
 tags: [individual, process, feedback, feed-forward]
 lang: en
