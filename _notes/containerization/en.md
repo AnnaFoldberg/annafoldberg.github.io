@@ -1,7 +1,7 @@
 ---
 title: "Containerization"
 categories: [kubernetes]
-tags: [containerization]
+tags: [containers]
 lang: en
 locale: en
 nav_order: 5
