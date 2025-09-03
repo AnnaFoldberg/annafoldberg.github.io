@@ -1,7 +1,7 @@
 ---
 title: "RabbitMQ: AMQ Model"
 categories: [microservices]
-tags: [rabbitmq, amqp, messaging-model, exchanges, queues]
+tags: [rabbitmq, communication]
 lang: da
 locale: da
 nav_order: 7

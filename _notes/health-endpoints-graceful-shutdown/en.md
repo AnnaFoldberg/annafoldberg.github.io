@@ -1,7 +1,7 @@
 ---
 title: "Health Endpoints and Graceful Shutdown"
 categories: [microservices, kubernetes]
-tags: [health-checks, graceful-shutdown, lifecycle-management, best-practices]
+tags: [lifecycle-management]
 lang: en
 locale: en
 nav_order: 3

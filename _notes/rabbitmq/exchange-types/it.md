@@ -1,7 +1,7 @@
 ---
 title: "RabbitMQ: Tipi di Exchange"
 categories: [microservices]
-tags: [rabbitmq, amqp, exchanges]
+tags: [rabbitmq, communication]
 lang: it
 locale: it
 nav_order: 8

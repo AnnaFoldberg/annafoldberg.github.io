@@ -1,7 +1,7 @@
 ---
 title: "Containerisering"
 categories: [kubernetes]
-tags: [containerization, overview]
+tags: [containerization]
 lang: da
 locale: da
 nav_order: 5
@@ -12,7 +12,7 @@ Der er en 3-trins proces, når man arbejder med containere og enten opretter ell
 2. Opret selve imaget (i Docker et Docker image, i Rocket en ACI (Application Container Image))  
 3. Push til et registry, så vi har containeren, der indeholder alle de nødvendige runtimes, biblioteker og binære filer til at køre en applikation  
 
-![VMs vs Containers](../../../assets/images/vms-vs-containers.png)
+![VMs vs Containers](../../assets/images/notes/containerization/vms-vs-containers.png)
 
 Applikationen kører oven på følgende opsætning:
 - Host OS  

@@ -1,7 +1,7 @@
 ---
 title: "Trackunit: System Architecture"
 categories: [trackunit, microservices]
-tags: [overview, architecture]
+tags: [architecture]
 lang: en
 locale: en
 nav_order: 2

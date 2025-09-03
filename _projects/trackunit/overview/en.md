@@ -1,7 +1,7 @@
 ---
 title: "Trackunit: AI-Powered Machine Recognition App"
 categories: [trackunit, microservices, kubernetes, it-security]
-tags: [overview]
+tags: [summary]
 lang: en
 locale: en
 nav_order: 1

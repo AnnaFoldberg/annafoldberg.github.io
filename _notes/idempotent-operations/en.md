@@ -1,7 +1,7 @@
 ---
 title: "Idempotent Operations"
 categories: [microservices, kubernetes]
-tags: [idempotency, reliability, patterns, best-practices]
+tags: [reliability]
 lang: en
 locale: en
 nav_order: 4

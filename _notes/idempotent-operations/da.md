@@ -1,7 +1,7 @@
 ---
 title: "Idempotente operationer"
 categories: [microservices, kubernetes]
-tags: [idempotency, reliability, patterns, best-practices]
+tags: [reliability]
 lang: da
 locale: da
 nav_order: 4

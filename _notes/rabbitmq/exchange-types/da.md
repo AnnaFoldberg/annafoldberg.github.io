@@ -1,7 +1,7 @@
 ---
 title: "RabbitMQ: Exchange-typer"
 categories: [microservices]
-tags: [rabbitmq, amqp, exchanges]
+tags: [rabbitmq, communication]
 lang: da
 locale: da
 nav_order: 8

@@ -1,7 +1,7 @@
 ---
 title: "Fondamenti dei Microservizi"
 categories: [microservices]
-tags: [overview, architecture, tools]
+tags: [architecture, tools]
 lang: it
 locale: it
 nav_order: 1
@@ -17,3 +17,5 @@ Tuttavia, è importante essere consapevoli che più microservizi ci sono, maggio
 - **Messaggistica asincrona:** Decoupla ulteriormente i microservizi tramite message brokers e queues (kafka)  
 - **Monitoraggio delle prestazioni:** Monitoraggio delle performance dei microservizi (prometheus)  
 - **Logging e audit:** Permette di tracciare tutto ciò che avviene nel sistema (datadog)
+
+<small> Fonte: [YouTube: Microservices Explained in 5 Minutes](https://www.youtube.com/watch?v=lL_j7ilk7rc)</small>

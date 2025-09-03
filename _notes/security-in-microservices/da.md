@@ -1,7 +1,7 @@
 ---
 title: "Sikkerhed i microservices"
 categories: [microservices, it-security]
-tags: [overview]
+tags: [authentication, api-security, encryption, observability]
 lang: da
 locale: da
 nav_order: 2

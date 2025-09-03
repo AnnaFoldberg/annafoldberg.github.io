@@ -1,7 +1,7 @@
 ---
 title: "Microservices Basics"
 categories: [microservices]
-tags: [overview, architecture, tools]
+tags: [architecture, tools]
 lang: en
 locale: en
 nav_order: 1
@@ -17,3 +17,5 @@ However, it’s important to be aware that the more microservices, the more comp
 - **Asynchronous Messaging:** Further decouples microservices by providing message brokers and queues (kafka)
 - **Performance Monitoring:** Tracks microservice performance (prometheus)
 - **Logging and Audit:** Help keep track of everything happening within the system (datadog)
+
+<small> Source: [YouTube: Microservices Explained in 5 Minutes](https://www.youtube.com/watch?v=lL_j7ilk7rc)</small>

@@ -1,7 +1,7 @@
 ---
 title: "RabbitMQ: AMQP (Advanced Message Queuing Protocol)"
 categories: [microservices]
-tags: [rabbitmq, amqp, message-protocols]
+tags: [rabbitmq, communication]
 lang: da
 locale: da
 nav_order: 6

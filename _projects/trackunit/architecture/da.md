@@ -1,7 +1,7 @@
 ---
-title: "Systemarkitektur"
+title: "Trackunit: Systemarkitektur"
 categories: [trackunit, microservices]
-tags: [overview, architecture]
+tags: [architecture]
 lang: da
 locale: da
 nav_order: 2

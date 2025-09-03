@@ -1,7 +1,7 @@
 ---
 title: "Grundlæggende om microservices"
 categories: [microservices]
-tags: [overview, architecture, tools]
+tags: [architecture, tools]
 lang: da
 locale: da
 nav_order: 1
@@ -17,3 +17,5 @@ Det er dog vigtigt at være opmærksom på, at jo flere microservices der er, de
 - **Asynkron beskedhåndtering:** Adskiller microservices yderligere ved at tilbyde message brokers og queues (kafka)
 - **Ydelsesovervågning:** Overvåger microservice-ydelse (prometheus)
 - **Logning og audit:** Hjælper med at holde styr på alt, hvad der sker i systemet (datadog)
+
+<small> Kilde: [YouTube: Microservices Explained in 5 Minutes](https://www.youtube.com/watch?v=lL_j7ilk7rc)</small>
