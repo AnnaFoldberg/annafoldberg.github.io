@@ -1,7 +1,7 @@
 ---
 title: "API Gateway"
 categories: [microservices, it-security]
-tags: [access-control, api-gateway, reverse-proxy]
+tags: [access-control, api-gateway, reverse-proxy, api-security]
 lang: it
 locale: it
 nav_order: 19
