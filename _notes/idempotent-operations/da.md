@@ -1,5 +1,5 @@
 ---
-title: "Idempotente operationer"
+title: "Idempotente Operationer"
 categories: [microservices, kubernetes]
 tags: [reliability]
 lang: da

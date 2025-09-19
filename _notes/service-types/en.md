@@ -1,7 +1,7 @@
 ---
 title: "Service Types"
 categories: [microservices]
-tags: [architecture, patterns]
+tags: [architecture]
 lang: en
 locale: en
 nav_order: 9

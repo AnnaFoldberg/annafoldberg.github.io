@@ -9,7 +9,7 @@ ref: note-integration-patterns
 ---
 Integrationsmønstre beskriver almindelige måder at strukturere kommunikation mellem microservices og klienter. De giver strategier til at rute, aggregere eller isolere forespørgsler afhængigt af systemets behov.
 
-**Gateway-mønster**
+**Gateway Pattern**
 
 Gateway-mønstret fungerer som indgangspunktet for klientkommunikation. Det giver en buffer mellem klientbehov og de underliggende services, isolerer systemet og eksponerer veldefinerede API’er.
 
@@ -22,7 +22,7 @@ Designstrategi for gateways:
 3. Anvend streng versionskontrol  
 4. Implementér gateway-komponenten  
 
-**Proces-aggregator-mønster**
+**Process Aggregator Pattern**
 
 Proces-aggregator-mønstret bruges, når flere forretningsprocesser skal kaldes sammen og kombineres i ét enkelt svar. I stedet for at kræve, at hver klient håndterer flere kald og replikerer logik, leverer aggregator-servicen ét API-endpoint.
 
@@ -36,7 +36,7 @@ Trin til at designe en aggregator:
 4. Implementér API’et baseret på modellen  
 5. Forbind servicen og anvend proceslogikken  
 
-**Edge-mønster**
+**Edge Pattern**
 
 Edge-mønstret adresserer skalerbarhed og klient-specifikke behov. I modsætning til en gateway, som betjener alle klienter, fokuserer en edge-service på en enkelt klient eller en lille gruppe klienter med unikke krav.
 

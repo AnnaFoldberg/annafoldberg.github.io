@@ -1,7 +1,7 @@
 ---
 title: "Pattern Operativi"
 categories: [microservices]
-tags: [microservices, architecture, operations]
+tags: [architecture, patterns]
 lang: it
 locale: it
 nav_order: 12

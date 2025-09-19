@@ -1,7 +1,7 @@
 ---
 title: "Operationelle Mønstre"
 categories: [microservices]
-tags: [microservices, architecture, operations]
+tags: [architecture, patterns]
 lang: da
 locale: da
 nav_order: 12
@@ -9,21 +9,21 @@ ref: note-operational-patterns
 ---
 Operationelle mønstre beskriver de praksisser, der holder et microservices-system observerbart, håndterbart og pålideligt i produktion.
 
-**Log-aggregationsmønster**
+**Log Aggregation Pattern**
 
-Logs er en af de mest værdifulde kilder til driftsdata. Med microservices er logs spredt over mange tjenester, så de skal aggregeres i én samlet strøm.
+Logs er en af de mest værdifulde kilder til driftsdata. Med microservices er logs spredt over mange services, så de skal aggregeres i én samlet strøm.
 
-Konsistens er afgørende: logstruktur, format og taksonomi bør deles på tværs af tjenester, selv i et polyglot-miljø. Strukturerede logs reducerer parsing-overhead, og sporings-id’er skal injiceres på samme måde overalt for at kunne rekonstruere kaldstakke.
+Konsistens er afgørende: logstruktur, format og taksonomi bør deles på tværs af services, selv i et polyglot-miljø. Strukturerede logs reducerer parsing-overhead, og sporings-id’er skal injiceres på samme måde overalt for at kunne rekonstruere kaldstakke.
 
-**Metrics-aggregationsmønster**
+**Metrics Aggregation Pattern**
 
 Metrics giver systemindsigt med mindre overhead end logs. Standardbiblioteker og -formater gør det muligt at indsamle metrics på tværs af sprog.
 
 Effektiv overvågning afhænger af taksonomi og visualisering. Dashboards bør bygges både på højt og detaljeret niveau, beriget med hændelser som udrulninger og alarmer knyttet til runbooks. Metrics-aggregation gør det muligt at vurdere systemets sundhed uden at læse rå logs.
 
-**Tracing-mønster**
+**Tracing Pattern**
 
-Tracing genskaber kaldstakken på tværs af tjenestegrænser. Et sporings-id injiceres ved systemets kant og propagere gennem alle kald, ideelt helt ned til databasen.
+Tracing genskaber kaldstakken på tværs af servicegrænser. Et sporings-id injiceres ved systemets kant og propagerer gennem alle kald, ideelt helt ned til databasen.
 
 Dette id bør inkluderes i hver logmeddelelse, så logs og traces kan korreleres. Standardbaseret tracing kombineret med visualiseringsværktøjer gør distribuerede kaldsflows diagnosticerbare på en måde, som monolitiske logs ikke kan.
 
@@ -35,15 +35,15 @@ Det er bedre at eksternalisere for meget end for lidt, da manglende konfiguratio
 
 **Service Discovery**
 
-Når antallet af tjenester vokser, bliver statisk konfiguration uoverskuelig. Service discovery giver et centralt register, hvor tjenester annoncerer deres endpoints og kapabiliteter.
+Når antallet af services vokser, bliver statisk konfiguration uoverskuelig. Service discovery giver et centralt register, hvor services annoncerer deres endpoints og kapabiliteter.
 
-Andre tjenester kan forespørge registret for dynamisk at løse URI’er og undgå hardcodede adresser. Dette understøtter skalering til hundreder eller tusinder af tjenester uden manuel konfiguration.
+Andre services kan forespørge registret for dynamisk at løse URI’er og undgå hardcodede adresser. Dette understøtter skalering til hundreder eller tusinder af services uden manuel konfiguration.
 
 **Continuous Delivery**
 
 Continuous delivery sikrer, at kode flyttes til produktion gennem fuldt automatiserede pipelines. Dette inkluderer artefakt-publicering, integrationstest, deployment og sikkerhedstest.
 
-Når koden er i produktion, fortsætter automatisering gennem planlagte smoke-tests. I microservices er CI/CD essentielt, da manuelle udrulninger ikke kan skalere med antallet af tjenester.
+Når koden er i produktion, fortsætter automatisering gennem planlagte smoke-tests. I microservices er CI/CD essentielt, da manuelle udrulninger ikke kan skalere med antallet af services.
 
 **Dokumentation**
 

@@ -1,7 +1,7 @@
 ---
 title: "Servicetyper"
 categories: [microservices]
-tags: [architecture, patterns]
+tags: [architecture]
 lang: da
 locale: da
 nav_order: 9

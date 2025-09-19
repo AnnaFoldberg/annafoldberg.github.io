@@ -1,7 +1,7 @@
 ---
 title: "Tipi di Servizi"
 categories: [microservices]
-tags: [architecture, patterns]
+tags: [architecture]
 lang: it
 locale: it
 nav_order: 9

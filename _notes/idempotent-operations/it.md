@@ -1,5 +1,5 @@
 ---
-title: "Operazioni idempotenti"
+title: "Operazioni Idempotenti"
 categories: [microservices, kubernetes]
 tags: [reliability]
 lang: it
