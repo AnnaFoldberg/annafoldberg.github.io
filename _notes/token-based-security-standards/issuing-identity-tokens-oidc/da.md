@@ -20,6 +20,6 @@ Da ID-tokenet er en JWT, indeholder det en kryptografisk signatur, der beskytter
 
 Identity tokens bør kun bruges af klienter og bør ikke anvendes til API-adgang. For at etablere brugeridentitet i en microservice kan access tokenet sendes til identity providerens user info-endpoint for at modtage claims med information om slutbrugeren. Dette gør det muligt for microservice at hente information om slutbrugeren.
 
-![OIDC Identity Token](../../../assets/images/notes/token-based-security-standards/oidc/oidc-identity-token.png)
+![OIDC Identity Token](../../../assets/images/notes/token-based-security-standards/issuing-identity-tokens-oidc/oidc-identity-token.png)
 
 <small> Kilde: [LinkedIn Learning: Securing Microservices](https://www.linkedin.com/learning/microservices-security/securing-microservices?contextUrn=urn%3Ali%3AlyndaLearningPath%3A645bcd56498e6459e79b3c71&resume=false&u=57075649)</small>

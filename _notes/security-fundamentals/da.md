@@ -15,7 +15,7 @@ ref: note-security-fundamentals
 
 For at opnå disse mål vælges og anvendes sikkerhedsstrategier og kontroller i en systems arkitektur i det omfang, de er nødvendige.
 
-![CIA triad](../../assets/images/notes/microservices/security-fundamentals.png)
+![CIA triad](../../assets/images/notes/security-fundamentals.png)
 
 **Adgangskontrol**
 
