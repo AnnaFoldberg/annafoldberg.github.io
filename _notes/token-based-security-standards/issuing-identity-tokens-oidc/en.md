@@ -20,6 +20,6 @@ Since the ID token is a JWT, it contains a cryptographic signature that protects
 
 Identity tokens should only be used by clients and should not be used for API access. To establish user identity within a microservice, the access token can be passed to the identity provider's user info endpoint to receive claims with information about the end-user. This allows the microservice to get information about the end-user.
 
-![OIDC Identity Token](../../../assets/images/notes/token-based-security-standards/oidc/oidc-identity-token.png)
+![OIDC Identity Token](../../../assets/images/notes/token-based-security-standards/issuing-identity-tokens-oidc/oidc-identity-token.png)
 
 <small> Source: [LinkedIn Learning: Securing Microservices](https://www.linkedin.com/learning/microservices-security/securing-microservices?contextUrn=urn%3Ali%3AlyndaLearningPath%3A645bcd56498e6459e79b3c71&resume=false&u=57075649)</small>
