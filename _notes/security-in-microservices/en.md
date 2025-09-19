@@ -1,7 +1,7 @@
 ---
 title: "Security in Microservices"
 categories: [microservices, it-security]
-tags: [authentication, encryption, observability]
+tags: [access-control, encryption, observability]
 lang: en
 locale: en
 nav_order: 2
