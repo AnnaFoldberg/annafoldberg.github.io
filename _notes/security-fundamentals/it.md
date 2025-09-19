@@ -1,7 +1,7 @@
 ---
 title: "Fondamenti di Sicurezza"
 categories: [microservices, it-security]
-tags: [cia-triad, access-control, attack-surface]
+tags: [cia-triad, authentication, authorization, attack-surface]
 lang: it
 locale: it
 nav_order: 16
@@ -15,7 +15,7 @@ ref: note-security-fundamentals
 
 Per raggiungere questi obiettivi, strategie e controlli di sicurezza vengono scelti e applicati all’architettura di un sistema nella misura in cui sono richiesti.
 
-![CIA triad](../../../assets/images/notes/microservices/security-fundamentals.png)
+![CIA triad](../../assets/images/notes/microservices/security-fundamentals.png)
 
 **Controllo degli accessi**
 

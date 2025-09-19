@@ -1,7 +1,7 @@
 ---
 title: "Grundlæggende Sikkerhedsprincipper"
 categories: [microservices, it-security]
-tags: [cia-triad, access-control, attack-surface]
+tags: [cia-triad, authentication, authorization, attack-surface]
 lang: da
 locale: da
 nav_order: 16
@@ -15,7 +15,7 @@ ref: note-security-fundamentals
 
 For at opnå disse mål vælges og anvendes sikkerhedsstrategier og kontroller i en systems arkitektur i det omfang, de er nødvendige.
 
-![CIA triad](../../../assets/images/notes/microservices/security-fundamentals.png)
+![CIA triad](../../assets/images/notes/microservices/security-fundamentals.png)
 
 **Adgangskontrol**
 

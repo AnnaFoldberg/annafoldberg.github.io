@@ -1,7 +1,7 @@
 ---
 title: "Microservice Security Challenges"
 categories: [microservices, it-security]
-tags: [access-control, attack-surface]
+tags: [authentication, attack-surface]
 lang: en
 locale: en
 nav_order: 17

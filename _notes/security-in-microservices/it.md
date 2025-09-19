@@ -1,7 +1,7 @@
 ---
 title: "Sicurezza nei Microservizi"
 categories: [microservices, it-security]
-tags: [access-control, encryption, observability]
+tags: [authentication, authorization, encryption, api-security, observability, service-mesh]
 lang: it
 locale: it
 nav_order: 2
