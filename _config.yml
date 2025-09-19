@@ -86,3 +86,6 @@ profile:
   linkedin: "https://www.linkedin.com/in/anna-foldberg/"
   github: "https://github.com/AnnaFoldberg"
   project: "https://github.com/Team-2-Devs"
+
+exclude:
+  - _notes/rabbitmq/exchange-types/quickstart-guide/
