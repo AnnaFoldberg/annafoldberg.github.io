@@ -1,5 +1,5 @@
 ---
-title: "2025-09-02: Konklusioner fra projektmøde"
+title: "2025-09-02: Konklusioner fra Projektmøde"
 categories: [trackunit]
 tags: [project, group, feed-forward]
 lang: da
