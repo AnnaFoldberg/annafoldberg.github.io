@@ -1,7 +1,7 @@
 ---
 title: "Mutual TLS"
 categories: [microservices, it-security]
-tags: [mtls, certificates, service-mesh, encryption]
+tags: [certificates, service-mesh, encryption]
 lang: da
 locale: da
 nav_order: 26
@@ -11,11 +11,11 @@ I en zero-trust-model verificerer hver microservice identiteten på enhver kalde
 
 TLS sikrer kommunikation ved at kryptere trafikken mellem klient og server, men autentificerer typisk kun serveren. Klienten validerer serverens certifikat mod betroede myndigheder, mens serveren ikke verificerer klienten.
 
-![TLS Overblik](../../../assets/images/notes/security-between-microservices/mtls/tls-one-way.png)
+![TLS Overblik](../../../assets/images/notes/security-between-microservices/mutual-tls/tls-one-way.png)
 
 **Mutual TLS (mTLS)** udvider dette ved at kræve, at begge sider præsenterer gyldige certifikater fra en betroet myndighed, før kanalen etableres. Det sikrer, at microservices kan identificere og have tillid til hinanden, før data udveksles. mTLS bruges bredt til at sikre service-til-service kommunikation og bør også beskytte kommunikationen mellem API-gatewayen og services. Uden et betroet certifikat kan selv en angriber inde i netværket ikke kalde en service.
 
-![mTLS Overblik](../../../assets/images/notes/security-between-microservices/mtls/mtls-handshake.png)
+![mTLS Overblik](../../../assets/images/notes/security-between-microservices/mutual-tls/mtls-handshake.png)
 
 At administrere mTLS i stor skala giver udfordringer. Microservices kører ofte i flygtige containere, så udstedelse og rotation af certifikater skal automatiseres. Container-orkestratorer og service meshes indeholder typisk indbyggede funktioner til at håndtere disse opgaver.
 

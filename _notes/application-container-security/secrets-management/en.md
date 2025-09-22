@@ -17,7 +17,7 @@ Container orchestrators like Kubernetes and OpenShift provide built-in secrets m
 
 ![Vault Secrets Injection](../../../assets/images/notes/application-container-security/secrets-management/vault-agent-injection.png)
 
-Vault also supports **dynamic secrets**, which rotate automatically, reducing the risk of long-lived credentials. With leases, short-lived credentials are issued each time access is requested, further limiting exposure if a secret is compromised.
+Vault also supports dynamic secrets, which rotate automatically, reducing the risk of long-lived credentials. With leases, short-lived credentials are issued each time access is requested, further limiting exposure if a secret is compromised.
 
 ![Vault Dynamic Secrets](../../../assets/images/notes/application-container-security/secrets-management/vault-dynamic-secrets.png)
 

@@ -17,7 +17,7 @@ Container-orchestrators som Kubernetes og OpenShift leverer indbygget secrets ma
 
 ![Vault Secrets Injection](../../../assets/images/notes/application-container-security/secrets-management/vault-agent-injection.png)
 
-Vault understøtter også **dynamiske secrets**, som roteres automatisk, hvilket reducerer risikoen for langlivede legitimationsoplysninger. Med leases udstedes kortlivede legitimationsoplysninger hver gang adgang anmodes om, hvilket yderligere begrænser eksponeringen, hvis et secret kompromitteres.
+Vault understøtter også dynamiske secrets, som roteres automatisk, hvilket reducerer risikoen for langlivede legitimationsoplysninger. Med leases udstedes kortlivede legitimationsoplysninger hver gang adgang anmodes om, hvilket yderligere begrænser eksponeringen, hvis et secret kompromitteres.
 
 ![Vault Dynamic Secrets](../../../assets/images/notes/application-container-security/secrets-management/vault-dynamic-secrets.png)
 

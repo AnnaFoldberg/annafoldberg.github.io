@@ -1,7 +1,7 @@
 ---
 title: "Mutual TLS"
 categories: [microservices, it-security]
-tags: [mtls, certificates, service-mesh, encryption]
+tags: [certificates, service-mesh, encryption]
 lang: en
 locale: en
 nav_order: 26

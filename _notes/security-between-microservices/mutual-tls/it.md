@@ -1,7 +1,7 @@
 ---
 title: "Mutual TLS"
 categories: [microservices, it-security]
-tags: [mtls, certificates, service-mesh, encryption]
+tags: [certificates, service-mesh, encryption]
 lang: it
 locale: it
 nav_order: 26
@@ -11,11 +11,11 @@ In un modello zero-trust, ogni microservizio verifica l’identità di chi chiam
 
 TLS protegge la comunicazione cifrando il traffico tra client e server, ma in genere autentica solo il server. Il client convalida il certificato del server rispetto alle autorità fidate, mentre il server non verifica il client.
 
-![Panoramica TLS](../../../assets/images/notes/security-between-microservices/mtls/tls-one-way.png)
+![Panoramica TLS](../../../assets/images/notes/security-between-microservices/mutual-tls/tls-one-way.png)
 
 **Mutual TLS (mTLS)** estende questo schema richiedendo che **entrambi** i lati presentino certificati validi emessi da un’autorità fidata prima di stabilire il canale. In questo modo i microservizi possono identificarsi e fidarsi l’uno dell’altro prima di scambiarsi dati. mTLS è ampiamente usato per proteggere la comunicazione service-to-service e dovrebbe proteggere anche quella tra API gateway e microservizi. Senza un certificato fidato, persino un attaccante all’interno della rete non può chiamare un servizio.
 
-![Panoramica mTLS](../../../assets/images/notes/security-between-microservices/mtls/mtls-handshake.png)
+![Panoramica mTLS](../../../assets/images/notes/security-between-microservices/mutual-tls/mtls-handshake.png)
 
 Gestire mTLS su larga scala introduce sfide. I microservizi spesso girano in container effimeri, quindi il provisioning e la rotazione dei certificati devono essere automatizzati. Gli orchestrator di container e i service mesh includono in genere funzionalità integrate per gestire questi compiti.
 
