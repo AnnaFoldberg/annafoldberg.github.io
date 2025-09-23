@@ -27,11 +27,11 @@ TeaApp is a mini microservices app that simulates ordering and brewing tea.
 - Enforce authentication (via oauth2-proxy) and rate limiting at the API gateway level.  
 
 **Technologies**
-- **.NET 9 / ASP.NET Core**  
-- **GraphQL (HotChocolate)**  
-- **RabbitMQ (AMQP)**  
-- **Kong (API Gateway, rate limiting)**  
-- **oauth2-proxy + Microsoft Entra ID (OIDC/JWT auth)**  
-- **Docker + Docker Compose**  
+- .NET 9 / ASP.NET Core  
+- GraphQL (HotChocolate)  
+- RabbitMQ (AMQP)  
+- Kong (API Gateway, rate limiting)  
+- oauth2-proxy + Microsoft Entra ID (OIDC/JWT auth)  
+- Docker + Docker Compose  
 
 [TeaApp Repository](https://github.com/annafoldberg/tea-app)
