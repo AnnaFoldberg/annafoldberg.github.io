@@ -7,7 +7,7 @@ locale: en
 nav_order: 32
 ref: note-container-image-security
 ---
-Container images are built from Dockerfiles, which define the instructions for adding and configuring a microservice. Each instruction adds a new layer to the image, starting from a **base image**, often provided by trusted sources like Microsoft, Red Hat, or official Linux distributions. Once built, images are stored in a registry and pulled to run as containers.
+Container images are built from Dockerfiles, which define the instructions for adding and configuring a microservice. Each instruction adds a new layer to the image, starting from a base image, often provided by trusted sources like Microsoft, Red Hat, or official Linux distributions. Once built, images are stored in a registry and pulled to run as containers.
 
 Security begins with using official base images from trusted repositories. Unverified images can introduce malicious code, creating a supply chain attack that compromises production systems. Official images are routinely updated to patch vulnerabilities, so staying current is critical.
 

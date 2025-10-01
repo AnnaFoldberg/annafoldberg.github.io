@@ -7,7 +7,7 @@ locale: it
 nav_order: 32
 ref: note-container-image-security
 ---
-Le container image vengono create a partire dai Dockerfile, che definiscono le istruzioni per aggiungere e configurare un microservizio. Ogni istruzione aggiunge un nuovo livello all’immagine, partendo da una **base image**, spesso fornita da fonti affidabili come Microsoft, Red Hat o distribuzioni Linux ufficiali. Una volta create, le immagini vengono archiviate in un registro e scaricate per essere eseguite come container.
+Le container image vengono create a partire dai Dockerfile, che definiscono le istruzioni per aggiungere e configurare un microservizio. Ogni istruzione aggiunge un nuovo livello all’immagine, partendo da una base image, spesso fornita da fonti affidabili come Microsoft, Red Hat o distribuzioni Linux ufficiali. Una volta create, le immagini vengono archiviate in un registro e scaricate per essere eseguite come container.
 
 La sicurezza inizia utilizzando immagini di base ufficiali provenienti da repository affidabili. Immagini non verificate possono introdurre codice dannoso, creando un attacco alla supply chain che compromette i sistemi di produzione. Le immagini ufficiali vengono aggiornate regolarmente per correggere vulnerabilità, quindi rimanere aggiornati è fondamentale.
 
