@@ -7,7 +7,7 @@ locale: en
 nav_order: 49
 ref: note-kubernetes-architecture-worker-nodes
 ---
-![Kubernetes Cluster Architecture (Airport Analogy)](../../../assets/images/notes/kubernetes-architecture/control-plane-worker-nodes-airport.png)
+![Kubernetes Cluster Architecture (Airport Analogy)](../../../assets/images/notes/kubernetes-architecture/worker-nodes/control-plane-worker-nodes-airport.png)
 
 If Kubernetes is like an airport, the control plane is the air traffic control tower, and the worker nodes are the busy terminals where planes park and passengers board. To maintain high availability, most clusters run with at least three worker nodes. Worker nodes are where Pods are scheduled and run, and each node has three main components.
 

@@ -7,7 +7,7 @@ locale: da
 nav_order: 50
 ref: note-control-plane-worker-nodes-interaction
 ---
-![Kubernetes Control Plane and Worker Nodes (Sequence Diagram)](../../../assets/images/notes/kubernetes-architecture/control-plane-worker-nodes-sequence.png)
+![Kubernetes Control Plane and Worker Nodes (Sequence Diagram)](../../../assets/images/notes/kubernetes-architecture/control-plane-worker-nodes-interaction/control-plane-worker-nodes-sequence.png)
 
 Et sekvensdiagram viser rækkefølgen af handlinger i Kubernetes, når en Pod tildeles en node. Selvom det er en forenklet visning, fremhæver det de vigtigste trin i, hvordan control plane og worker nodes interagerer.
 

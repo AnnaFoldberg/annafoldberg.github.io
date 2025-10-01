@@ -7,7 +7,7 @@ locale: it
 nav_order: 50
 ref: note-control-plane-worker-nodes-interaction
 ---
-![Kubernetes Control Plane and Worker Nodes (Sequence Diagram)](../../../assets/images/notes/kubernetes-architecture/control-plane-worker-nodes-sequence.png)
+![Kubernetes Control Plane and Worker Nodes (Sequence Diagram)](../../../assets/images/notes/kubernetes-architecture/control-plane-worker-nodes-interaction/control-plane-worker-nodes-sequence.png)
 
 Un diagramma di sequenza illustra l’ordine delle azioni in Kubernetes quando un Pod viene assegnato a un node. Pur essendo una visione semplificata, evidenzia i passaggi chiave di come il control plane e i worker nodes interagiscono.
 

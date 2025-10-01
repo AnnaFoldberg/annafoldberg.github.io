@@ -7,7 +7,7 @@ locale: da
 nav_order: 49
 ref: note-kubernetes-architecture-worker-nodes
 ---
-![Kubernetes Cluster Architecture (Airport Analogy)](../../../assets/images/notes/kubernetes-architecture/control-plane-worker-nodes-airport.png)
+![Kubernetes Cluster Architecture (Airport Analogy)](../../../assets/images/notes/kubernetes-architecture/worker-nodes/control-plane-worker-nodes-airport.png)
 
 Hvis Kubernetes er som en lufthavn, er control plane kontroltårnet, mens worker nodes er de travle terminaler, hvor fly parkerer og passagerer går ombord. For at opretholde høj tilgængelighed kører de fleste clusters med mindst tre worker nodes. Worker nodes er stedet, hvor Pods tildeles en node og kører, og hver node har tre hovedkomponenter.
 
