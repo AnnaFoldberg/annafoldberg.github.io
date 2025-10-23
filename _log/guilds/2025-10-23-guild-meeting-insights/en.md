@@ -19,3 +19,15 @@ We also discussed whether a microservices architecture even makes sense for a pr
 
 **Spikes**  
 We talked about using small spikes to try out new technologies in limited experiments. This approach makes it possible to gain hands-on experience and test ideas on a smaller scale before they are potentially implemented in the full project.  
+
+##### IT Security  
+**Scope**  
+It was clarified that the focus for IT security remains within our own defined scope, and that we are not expected to cover topics beyond the learning objectives and the content included in our portfolios.  
+
+**HashiCorp Vault**  
+We discussed that HashiCorp Vault is easy to set up with Kubernetes, but that in production it should run on a separate server or in a virtual machine rather than in a regular container, as it requires direct system access and stable storage.  
+For demonstration or prototype purposes, however, it can easily run in a container.  
+HashiCorp supports the assignment of roles and tokens, which automatically expire or are deactivated when the corresponding roles are closed. It issues tokens only to users who need access, and through the audit log it is possible to see who has accessed which resources.  
+
+**Suggested Kubernetes Course**  
+[Certified Kubernetes Administrator (CKA) – LinkedIn Learning](https://www.linkedin.com/learning/certified-kubernetes-administrator-cka-cert-prep-25818035/lesson-11-lab-solution-setting-up-storage?u=57075649)

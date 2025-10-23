@@ -19,3 +19,15 @@ Abbiamo inoltre riflettuto se un’architettura a microservizi sia effettivament
 
 **Spikes**  
 Abbiamo parlato di utilizzare piccoli spike per sperimentare nuove tecnologie in prove limitate. Questo approccio permette di acquisire esperienza pratica e testare le idee su scala ridotta prima di implementarle nel progetto completo.  
+
+##### Sicurezza IT  
+**Ambito**  
+È stato chiarito che l’attenzione per la sicurezza informatica rimane entro i limiti della nostra definizione, e che non ci si aspetta che trattiamo argomenti oltre gli obiettivi di apprendimento e i contenuti presenti nei nostri portfolio.  
+
+**HashiCorp Vault**  
+Abbiamo discusso che HashiCorp Vault è facile da configurare con Kubernetes, ma che in produzione dovrebbe essere eseguito su un server separato o in una macchina virtuale, piuttosto che in un normale container, poiché richiede accesso diretto al sistema e uno storage stabile.  
+Per scopi dimostrativi o prototipali, tuttavia, può essere eseguito senza problemi in un container.  
+HashiCorp supporta l’assegnazione di ruoli e token che scadono automaticamente o vengono disattivati quando i relativi ruoli vengono chiusi. Emmette token solo agli utenti che necessitano di accesso e, tramite l’audit log, è possibile vedere chi ha avuto accesso a quali risorse.  
+
+**Corso Kubernetes consigliato**  
+[Certified Kubernetes Administrator (CKA) – LinkedIn Learning](https://www.linkedin.com/learning/certified-kubernetes-administrator-cka-cert-prep-25818035/lesson-11-lab-solution-setting-up-storage?u=57075649)

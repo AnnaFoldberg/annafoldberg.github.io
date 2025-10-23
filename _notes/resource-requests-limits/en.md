@@ -14,7 +14,7 @@ Kubernetes can reserve CPU and memory for Pods when resource requests and limits
 - **Without limits:** A Pod can consume all available CPU or memory on a node, potentially crashing other workloads and causing outages.  
 
 ##### Deployment Manifest
-~~~yaml
+```yaml
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -58,7 +58,7 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: status.podIP
-~~~
+```
 
 ##### Manifest Breakdown
 - **requests:** Minimum resources required to schedule the Pod (64Mi memory, 250m CPU).  

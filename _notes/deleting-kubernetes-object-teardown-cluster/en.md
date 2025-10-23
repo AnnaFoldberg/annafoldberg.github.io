@@ -5,7 +5,7 @@ tags: [cluster, minikube]
 lang: en
 locale: en
 nav_order: 47
-ref: note-deleting-objects-teardown-cluster
+ref: note-deleting-kubernetes-objects-teardown-cluster
 ---
 Because Minikube is resource-intensive, it is best to clean up resources and stop the cluster when it is not in use. This involves deleting Kubernetes objects and then shutting down the Minikube cluster.
 

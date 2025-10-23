@@ -19,3 +19,15 @@ Vi kom desuden ind på, at det er relevant at overveje, om en microservices-arki
 
 **Spikes**  
 Vi talte om at bruge små spikes til at afprøve nye teknologier i afgrænsede forsøg. Det giver mulighed for at tilegne sig praktisk erfaring og teste idéer i mindre skala, inden de eventuelt implementeres i det samlede projekt.
+
+##### IT-sikkerhed  
+**Afgrænsning**  
+Det blev afklaret, at fokus for IT-sikkerhed ligger inden for vores egen afgrænsning, og at der ikke forventes dækning ud over læringsmålene og indholdet i vores porteføljer.  
+
+**HashiCorp Vault**  
+Vi vendte, at HashiCorp (Vault) er nemt at sætte op sammen med Kubernetes, men at det i produktion bør køre på en separat server eller i en virtuel maskine fremfor som en almindelig container, da det kræver direkte systemadgang og stabil lagring.
+Til demonstration eller prototype kan det dog fint køre i en container.  
+HashiCorp understøtter tildeling af roller og tokens, der automatisk udløber eller deaktiveres, når roller lukkes. Det udsteder kun tokens til brugere med behov for adgang, og via audit-loggen kan man se, hvem der har tilgået hvilke ressourcer.  
+
+**Forslag til Kubernetes kursus**  
+[Certified Kubernetes Administrator (CKA) – LinkedIn Learning](https://www.linkedin.com/learning/certified-kubernetes-administrator-cka-cert-prep-25818035/lesson-11-lab-solution-setting-up-storage?u=57075649)
