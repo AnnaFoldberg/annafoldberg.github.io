@@ -5,7 +5,7 @@ tags: [project, group, feed-forward]
 lang: da
 locale: da
 nav_order: 8
-ref: log-2025-09-02-project-meeting-conclusions
+ref: log-2025-09-11-project-meeting-conclusions
 ---
 Vi har midlertidigt sat projektarbejdet på pause for at give plads til, at hver af os kan fordybe os i vores respektive emner, inden vi risikerer at arbejde os for langt ind i projektet uden en klar retning.  
 I projektvejledningen blev vi anbefalet at lave en projektplan, der rækker over to uger, så vi hele tiden har et tydeligt sigte. Planen kan justeres undervejs, hvis behovet opstår.  

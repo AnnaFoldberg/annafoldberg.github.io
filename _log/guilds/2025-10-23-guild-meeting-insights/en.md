@@ -4,7 +4,7 @@ categories: [microservices, it-security]
 tags: [guild, individual, reflection]
 lang: en
 locale: en
-nav_order: 11
+nav_order: 13
 ref: log-2025-10-23-guild-meeting-insights
 ---
 ##### Microservices and Kubernetes  

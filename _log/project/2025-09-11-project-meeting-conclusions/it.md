@@ -5,7 +5,7 @@ tags: [project, group, feed-forward]
 lang: it
 locale: it
 nav_order: 8
-ref: log-2025-09-02-project-meeting-conclusions
+ref: log-2025-09-11-project-meeting-conclusions
 ---
 Abbiamo temporaneamente messo in pausa il lavoro sul progetto per dare a ciascuno di noi il tempo di approfondire i propri argomenti, prima di rischiare di procedere troppo nel progetto senza una direzione chiara.  
 Durante la guida al progetto ci è stato consigliato di preparare un piano di progetto della durata di due settimane, in modo da avere sempre un obiettivo chiaro. Il piano può comunque essere adattato lungo il percorso se necessario.  

@@ -5,7 +5,7 @@ tags: [project, group, feed-forward]
 lang: en
 locale: en
 nav_order: 8
-ref: log-2025-09-02-project-meeting-conclusions
+ref: log-2025-09-11-project-meeting-conclusions
 ---
 We have temporarily paused project work to allow each of us to dive deeper into our respective topics before risking moving too far into the project without a clear direction.  
 In the project guidance, we were advised to create a project plan spanning two weeks to ensure we always have a clear target. The plan can be adjusted along the way if necessary.  
