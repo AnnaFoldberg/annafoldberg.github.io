@@ -25,7 +25,7 @@ Nogle services bruger RabbitMQ, mens andre bruger ren Kafka eller Kafka via Redp
 9. **tu-storage-service** abonnerer på dette topic og consumer eventet, og opdaterer `status` i den tilknyttede database til *uploaded*.
 10. **tu-ingestion-service** publicerer eventet `ImageUploaded` på et Kafka topic via Redpanda, der blandt andet indeholder `objectKey` i sin payload.  
 
->Note: Dette flow holdes adskilt fra **svc-analysis-orchestrator** for at sikre, at uploadprocessen kan køre uafhængigt. På den måde fungerer det som et selvstændigt workflow, der ikke påvirkes, hvis **svc-analysis-orchestrator** er midlertidigt nede.
+> Note: Dette flow holdes adskilt fra **svc-analysis-orchestrator** for at sikre, at uploadprocessen kan køre uafhængigt. På den måde fungerer det som et selvstændigt workflow, der ikke påvirkes, hvis **svc-analysis-orchestrator** er midlertidigt nede.
 
 ##### Analyseorkestrering
 1. **svc-messaging-bridge** consumer eventet `ImageUploaded` fra Kafka topic via Redpanda og publicerer til en fanout RabbitMQ exchange.
@@ -39,7 +39,7 @@ Nogle services bruger RabbitMQ, mens andre bruger ren Kafka eller Kafka via Redp
 9. **svc-analysis-orchestrator** publicerer et `AnalysisCompleted` event til `analysis.completed` fanout exchangen via RabbitMQ.  
 10. **graph-gateway** consumer `analysis.completed` eventet fra sin queue i RabbitMQ og videresender det til GraphQL subscription `onAnalysisCompleted` til **client** via WebSocket-forbindelsen.  
 
->Note: Der kan implementeres ekstra events, såsom AnalysisFailed, hvis resultatet fra AI-flowet ikke er valid.
+> Note: Der kan implementeres ekstra events, såsom AnalysisFailed, hvis resultatet fra AI-flowet ikke er valid.
 
 ##### AI billedanalyse
 1. **svc-ai-vision-adapter** abonnerer på et Kafka topic og consumer eventet.
