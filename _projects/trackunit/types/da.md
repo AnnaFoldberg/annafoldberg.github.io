@@ -1,7 +1,7 @@
 ---
-title: "Types"
+title: "Trackunit: Types"
 categories: [trackunit]
-tags: [graphql, types]
+tags: [graphql]
 lang: da
 locale: da
 nav_order: 6

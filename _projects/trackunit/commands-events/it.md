@@ -1,7 +1,7 @@
 ---
-title: "Comandi vs Eventi"
+title: "Trackunit: Comandi vs Eventi"
 categories: [trackunit, microservices]
-tags: [messaging, rabbitmq, architecture, naming-conventions]
+tags: [rabbitmq, architecture, naming-conventions]
 lang: it
 locale: it
 nav_order: 7

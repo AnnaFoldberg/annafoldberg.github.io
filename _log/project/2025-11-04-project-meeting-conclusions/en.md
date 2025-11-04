@@ -1,5 +1,5 @@
 ---
-title: "2025-11-04: Project Meeting Conclusions"
+title: "2025-11-04: Conclusions from Project Meeting"
 categories: [trackunit]
 tags: [project, group, feed-forward]
 lang: en

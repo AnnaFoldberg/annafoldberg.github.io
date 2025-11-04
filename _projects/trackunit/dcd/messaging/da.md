@@ -1,0 +1,11 @@
+---
+title: "Trackunit: Messaging DCD"
+categories: [trackunit, microservices]
+tags: [architecture]
+lang: da
+locale: da
+nav_order: 10
+ref: dcd-messaging
+---
+
+![Messaging DCD](../../../assets/images/projects/trackunit/dcd/messaging/messaging-dcd.jpg)

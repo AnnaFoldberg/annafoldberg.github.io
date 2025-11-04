@@ -1,7 +1,7 @@
 ---
-title: "Commands vs Events"
+title: "Trackunit: Commands vs Events"
 categories: [trackunit, microservices]
-tags: [messaging, rabbitmq, architecture, naming-conventions]
+tags: [rabbitmq, architecture, naming-conventions]
 lang: en
 locale: en
 nav_order: 7

@@ -1,16 +1,14 @@
 ---
-title: "System Architecture"
+title: "Trackunit: System Architecture"
 categories: [trackunit, microservices]
-tags: [architecture, services, infrastructure]
+tags: [architecture, infrastructure]
 lang: en
 locale: en
 nav_order: 8
 ref: system-architecture
 ---
 
-## System Architecture
-
-### Core Services
+##### Core Services
 
 - **[GraphGateway](https://github.com/team-2-devs/graph-gateway)**  
   Microservice serving as the API facade and application gateway for the system. Provides a GraphQL API with queries, mutations, and subscriptions. Publishes `RequestAnalysis` commands to RabbitMQ and forwards `analysis/started` and `analysis/completed` events to the `onAnalysisStarted` and `onAnalysisCompleted` GraphQL subscription fields.
@@ -18,14 +16,14 @@ ref: system-architecture
 - **[SvcAnalysisOrchestrator](https://github.com/team-2-devs/svc-analysis-orchestrator)**  
   Microservice that orchestrates analysis. Consumes `RequestAnalysis` commands from RabbitMQ and publishes `analysis.started` and `analysis.completed` event exchanges.
 
-### Shared Components
+##### Shared Components
 
 - **[Messaging](https://github.com/team-2-devs/messaging)**  
   NuGet package containing shared `MessageContracts` and reusable RabbitMQ publisher interfaces and implementations.
 
-### Infrastructure
+##### Infrastructure
 
-- **InfraCore**  
+- **[InfraCore](https://github.com/team-2-devs/infra-core)**
   Docker Compose-based orchestration environment bundling all services and infrastructure components, including **Kong Gateway**, **oauth2-proxy**, and **RabbitMQ**.
 
 - **Kong Gateway**  

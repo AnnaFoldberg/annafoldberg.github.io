@@ -1,5 +1,5 @@
 ---
-title: "YAML Filenames"
+title: "Trackunit: YAML Filenames"
 categories: [trackunit]
 tags: [naming-conventions, yaml]
 lang: en
