@@ -9,7 +9,7 @@ ref: prebuilt-images
 ---
 
 Hver service bygger sit eget Docker-image i sit eget repository og uploader det til et container registry (GHCR).  
-**Infra-core**-repositoryet henter de prebuilt images og kører dem via *docker-compose*.
+**infra-core**-repositoryet henter de prebuilt images og kører dem via *docker-compose*.
 
 **I hvert app-repo (CI):**  
 ```yaml
