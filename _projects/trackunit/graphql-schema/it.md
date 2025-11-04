@@ -8,6 +8,7 @@ nav_order: 17
 ref: graphql-schema
 ---
 
+{% raw %}
 ```graphql
 schema {
   query: Query
@@ -48,3 +49,5 @@ type Subscription {
 input AnalysisRequestInput {
   objectKey: String!
 }
+```
+{% endraw %}
