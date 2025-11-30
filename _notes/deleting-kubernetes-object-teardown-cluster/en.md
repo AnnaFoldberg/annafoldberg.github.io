@@ -1,7 +1,7 @@
 ---
 title: "Deleting Kubernetes Objects and Tearing Down a Cluster"
 categories: [kubernetes]
-tags: [cluster, minikube]
+tags: [clusters, minikube]
 lang: en
 locale: en
 nav_order: 47

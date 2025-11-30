@@ -1,7 +1,7 @@
 ---
 title: "Eliminazione di Kubernetes Objects e Arresto di un Cluster"
 categories: [kubernetes]
-tags: [deleting, cluster, minikube]
+tags: [clusters, minikube]
 lang: it
 locale: it
 nav_order: 47

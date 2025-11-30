@@ -1,7 +1,7 @@
 ---
 title: "Kubernetes-arkitektur: Cluster Components"
 categories: [kubernetes]
-tags: [architecture, cluster, control-plane, worker-nodes]
+tags: [architecture, clusters, control-plane, worker-nodes]
 lang: da
 locale: da
 nav_order: 51

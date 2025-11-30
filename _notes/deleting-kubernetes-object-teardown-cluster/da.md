@@ -1,7 +1,7 @@
 ---
 title: "Sletning af Kubernetes Objects og Nedlukning af et Cluster"
 categories: [kubernetes]
-tags: [deleting, cluster, minikube]
+tags: [clusters, minikube]
 lang: da
 locale: da
 nav_order: 47
