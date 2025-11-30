@@ -5,7 +5,7 @@ tags: [individual, process, feedback, feed-forward]
 lang: en
 locale: en
 nav_order: 10
-ref: log-2025-09-22-teaapp-microservices
+ref: log-2025-09-22-progress-direction
 ---
 **Feedback**  
 I have gained a deeper understanding of microservices and their security aspects. To put this knowledge into practice, I built a mini application, [`TeaApp`](https://github.com/annafoldberg/tea-app), where I experimented with microservices architecture and technologies in a real setup. Through this project, I learned how to use GraphQL, RabbitMQ messaging, authentication with OAuth 2.0 and Microsoft Entra, Kong as an API gateway, and Docker for containerization.  
