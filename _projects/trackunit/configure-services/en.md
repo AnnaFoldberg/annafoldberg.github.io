@@ -10,7 +10,7 @@ ref: configure-services
 
 The project consists of services running inside a Kubernetes cluster, as well as services running outside the cluster using either Docker Compose or directly on the host. To enable communication across these environments, certain external services require adjusted configurations relative to what exists in their repositories.
 
-## Configure Services
+##### Configure Services
 
 **infra-core/k8s/graph-gateway/secret.yaml**  
 1. Choose a value to replace `changeme` and use it consistently across all future `.env` files:

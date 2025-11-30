@@ -7,7 +7,7 @@ locale: en
 nav_order: 20
 ref: authentication-flow-final
 ---
->**Note:** The authentication flow is identical to the one used in the prototype. It is repeated here for clarity and to ensure that the documentation is self-contained.
+>**Note:** The authentication flow is identical to the one used in the prototype. It is repeated here for clarity and to ensure that the documentation is self-contained.  
 1. **Client** authenticates with **MSAL** (device code) and acquires an **access token** for the API:
    - **Scope requested:** `api://{API_CLIENT_ID}/analysis` → token `scp` includes `analysis`.
    - **Token audience:** `api://{API_CLIENT_ID}` or `{API_CLIENT_ID}`

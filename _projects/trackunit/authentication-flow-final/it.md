@@ -7,7 +7,7 @@ locale: it
 nav_order: 20
 ref: authentication-flow-final
 ---
->**Nota:** Il flusso di autenticazione è identico a quello utilizzato nel prototipo. È riportato qui per maggiore chiarezza e per garantire che la documentazione sia autosufficiente.
+>**Nota:** Il flusso di autenticazione è identico a quello utilizzato nel prototipo. È riportato qui per maggiore chiarezza e per garantire che la documentazione sia autosufficiente.  
 1. Il **client** si autentica tramite **MSAL** (device code) e ottiene un **access token** per l’API:  
    - **Scope richiesto:** `api://{API_CLIENT_ID}/analysis` → il campo `scp` del token include `analysis`.  
    - **Audience del token:** `api://{API_CLIENT_ID}` oppure `{API_CLIENT_ID}`

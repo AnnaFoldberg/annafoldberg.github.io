@@ -8,7 +8,7 @@ nav_order: 25
 ref: configure-tailscale-redpanda
 ---
 
-## Configure Tailscale & Redpanda
+##### Configure Tailscale & Redpanda
 1. Installér:
    ```bash
    curl -fsSL https://tailscale.com/install.sh | sh

@@ -8,7 +8,7 @@ nav_order: 19
 ref: system-architecture-final
 ---
 
->**Note:** Kun komponenter listet under **InfraCore** er deployeret i Kubernetes.
+>**Note:** Kun komponenter listet under **InfraCore** er deployed i Kubernetes.
 
 ##### Client Applications
 

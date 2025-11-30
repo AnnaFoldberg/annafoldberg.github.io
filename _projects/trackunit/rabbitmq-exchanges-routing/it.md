@@ -8,7 +8,7 @@ nav_order: 21
 ref: rabbitmq-exchanges-routing
 ---
 
-## RabbitMQ: Exchanges & Routing
+##### RabbitMQ: Exchanges & Routing
 - **`tu.image.uploaded` (fanout)**
   - **Publisher:** tu-ingestion-service
   - **Consumer:** svc-analysis-orchestrator (tramite `svc-messaging-bridge`, coda `orchestrator.image-uploaded`)
