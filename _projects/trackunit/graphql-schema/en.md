@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: GraphQL Schema (SDL)"
 categories: [trackunit]
-tags: [graphql]
+tags: [graphql, prototype]
 lang: en
 locale: en
 nav_order: 17

@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Messaging DCD"
 categories: [trackunit, microservices]
-tags: [architecture]
+tags: [architecture, prototype]
 lang: en
 locale: en
 nav_order: 10

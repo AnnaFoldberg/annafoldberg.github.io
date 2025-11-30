@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Planning: AI-Powered Machine Recognition App"
 categories: [trackunit, microservices, kubernetes, it-security]
-tags: [summary]
+tags: [summary, planning]
 lang: en
 locale: en
 nav_order: 1

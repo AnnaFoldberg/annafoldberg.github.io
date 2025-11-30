@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Systemarkitektur"
 categories: [trackunit, microservices]
-tags: [architecture, infrastructure]
+tags: [architecture, infrastructure, prototype]
 lang: da
 locale: da
 nav_order: 8

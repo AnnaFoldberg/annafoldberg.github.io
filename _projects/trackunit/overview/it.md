@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Planning: App di riconoscimento macchinari basata su IA"
 categories: [trackunit, microservices, kubernetes, it-security]
-tags: [summary]
+tags: [summary, planning]
 lang: it
 locale: it
 nav_order: 1

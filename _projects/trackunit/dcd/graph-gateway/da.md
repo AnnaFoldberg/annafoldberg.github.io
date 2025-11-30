@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: GraphGateway DCD"
 categories: [trackunit, microservices]
-tags: [architecture]
+tags: [architecture, prototype]
 lang: da
 locale: da
 nav_order: 11

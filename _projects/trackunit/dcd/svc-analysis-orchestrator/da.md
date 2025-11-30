@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: SvcAnalysisOrchestrator DCD"
 categories: [trackunit, microservices]
-tags: [architecture]
+tags: [architecture, prototype]
 lang: da
 locale: da
 nav_order: 12

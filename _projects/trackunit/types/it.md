@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Types"
 categories: [trackunit]
-tags: [graphql]
+tags: [graphql, prototype]
 lang: it
 locale: it
 nav_order: 6

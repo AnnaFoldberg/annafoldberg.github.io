@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Architettura di sistema"
 categories: [trackunit, microservices]
-tags: [architecture, infrastructure]
+tags: [architecture, infrastructure, prototype]
 lang: it
 locale: it
 nav_order: 8

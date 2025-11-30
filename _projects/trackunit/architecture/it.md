@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Planning: Architettura di sistema"
 categories: [trackunit, microservices]
-tags: [architecture]
+tags: [architecture, planning]
 lang: it
 locale: it
 nav_order: 2

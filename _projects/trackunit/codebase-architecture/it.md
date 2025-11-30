@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Architettura della Codebase"
 categories: [trackunit]
-tags: [architecture]
+tags: [architecture, prototype]
 lang: it
 locale: it
 nav_order: 9

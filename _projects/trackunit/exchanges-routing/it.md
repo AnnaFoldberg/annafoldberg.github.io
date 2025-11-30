@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Exchanges & Routing"
 categories: [trackunit, microservices]
-tags: [rabbitmq, architecture]
+tags: [rabbitmq, architecture, prototype]
 lang: it
 locale: it
 nav_order: 16

@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Immagini precompilate"
 categories: [trackunit]
-tags: [docker, ci]
+tags: [docker, ci, prototype]
 lang: it
 locale: it
 nav_order: 5

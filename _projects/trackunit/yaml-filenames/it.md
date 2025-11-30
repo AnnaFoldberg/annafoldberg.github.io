@@ -1,7 +1,7 @@
 ---
-title: "Trackunit Prototype: Nomi dei file YAML"
+title: "Trackunit Conventions: Nomi dei file YAML"
 categories: [trackunit]
-tags: [naming-conventions, yaml]
+tags: [yaml, naming-conventions]
 lang: it
 locale: it
 nav_order: 4

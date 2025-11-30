@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Authentication Flow"
 categories: [trackunit, microservices, it-security]
-tags: [authentication, api-gateway, kong, oauth2]
+tags: [authentication, api-gateway, kong, oauth2, prototype]
 lang: da
 locale: da
 nav_order: 14

@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Systemdiagram"
 categories: [trackunit, microservices]
-tags: [architecture, infrastructure, rabbitmq]
+tags: [architecture, infrastructure, rabbitmq, prototype]
 lang: da
 locale: da
 nav_order: 13
