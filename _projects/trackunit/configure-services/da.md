@@ -10,7 +10,7 @@ ref: configure-services
 
 Projektet består både af services, der kører i et Kubernetes-cluster, og services, der kører uden for clusteret, enten via Docker Compose eller direkte på hosten. For at kommunikere på tværs af disse miljøer kræver nogle eksterne services justerede konfigurationer i forhold til det, der ligger i deres respektive repositories.
 
-### Configure Services
+##### Configure Services
 
 **infra-core/k8s/graph-gateway/secret.yaml**  
 1. Vælg værdi i stedet for `changeme` og brug den konsekvent i alle fremtidige `.env`-filer:

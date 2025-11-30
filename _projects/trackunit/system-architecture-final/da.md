@@ -8,10 +8,9 @@ nav_order: 19
 ref: system-architecture-final
 ---
 
-## System Architecture
 >**Note:** Kun komponenter listet under **InfraCore** er deployeret i Kubernetes.
 
-### Client Applications
+##### Client Applications
 
 - **[trackunit-client](https://github.com/Team-2-Devs/trackunit-client)**  
   **Ansvarlig:** Eske.  
@@ -22,7 +21,7 @@ ref: system-architecture-final
   Konsolapplikation målrettet udviklere, brugt under udvikling. Implementerer samme autentifikationsflow og understøtter de samme GraphQL-mutationer og -subscriptions som **trackunit-client**.  
   Beholdes i projektet som referenceklient til validering af TLS mellem klient og Kong.  
 
-### Core Services
+##### Core Services
 
 - **[graph-gateway](https://github.com/team-2-devs/graph-gateway)**  
   Microservice, der fungerer som API-facade og applikationsgateway for systemet. Leverer et GraphQL API med queries, mutations og subscriptions. Kalder REST-endepunkterne `POST /uploads/start` og `POST /uploads/confirm` på **tu-ingestion-service**. Consumer `analysis.started` og `analysis.completed` events fra RabbitMQ og videresender de tilsvarende `analysis/started` og `analysis/completed` events til felterne onAnalysisStarted og onAnalysisCompleted i GraphQL-subscriptions.  
@@ -50,12 +49,12 @@ ref: system-architecture-final
   **Ansvarlig:** Kenneth. Beskrivelse fra repository-dokumentationen.  
   Microservice, der integrerer med object storage for at udstede presigned PUT/GET-URLs og håndhæve upload- og download-politikker.  
 
-### Shared Components
+##### Shared Components
 
 - **[Messaging](https://github.com/team-2-devs/messaging)**  
   NuGet-pakke, der indeholder fælles `MessageContracts` samt genanvendelige interfaces og implementationer til RabbitMQ og Kafka.
 
-### Infrastructure
+##### Infrastructure
 
 - **InfraCore**  
   Kubernetes-baseret orkestreringsmiljø, der samler microservices og infrastrukturkomponenter, herunder **graph-gateway**, **svc-analysis-orchestrator**, **Kong Gateway**, **oauth2-proxy** og **RabbitMQ**.

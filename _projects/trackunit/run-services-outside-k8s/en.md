@@ -8,7 +8,7 @@ nav_order: 28
 ref: run-services-outside-k8s
 ---
 
-### Run Services Outside Kubernetes Cluster
+##### Run Services Outside Kubernetes Cluster
 
 **svc-ai-vision-adapter**  
 1. Go to the `svc-ai-vision-adapter` folder and run:  

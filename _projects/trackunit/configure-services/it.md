@@ -10,7 +10,7 @@ ref: configure-services
 
 Il progetto include servizi che girano dentro un cluster Kubernetes e servizi che girano al di fuori del cluster, tramite Docker Compose o direttamente sull’host. Per permettere la comunicazione tra questi ambienti, alcuni servizi esterni richiedono configurazioni modificate rispetto ai loro repository originali.
 
-### Configurare i Servizi
+##### Configurare i Servizi
 
 **infra-core/k8s/graph-gateway/secret.yaml**  
 1. Scegli un valore al posto di `changeme` e usalo in modo coerente in tutti i futuri file `.env`:

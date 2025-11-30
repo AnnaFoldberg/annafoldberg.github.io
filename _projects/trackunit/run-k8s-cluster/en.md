@@ -8,7 +8,7 @@ nav_order: 27
 ref: run-k8s-cluster
 ---
 
-### Run Kubernetes Cluster Locally
+##### Run Kubernetes Cluster Locally
 1. Ensure Docker Desktop is running.  
 2. Navigate to the `infra-core/k8s` directory.  
 3. Create the Kubernetes cluster:

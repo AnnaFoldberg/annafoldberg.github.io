@@ -8,10 +8,9 @@ nav_order: 19
 ref: system-architecture-final
 ---
 
-## System Architecture
 >**Note:** Only components listed under **InfraCore** are deployed in Kubernetes.
 
-### Client Applications
+##### Client Applications
 
 - **[trackunit-client](https://github.com/Team-2-Devs/trackunit-client)**  
   **Owner:** Eske.  
@@ -22,7 +21,7 @@ ref: system-architecture-final
   Developer-focused console application used during development. Implements the same authentication flow and supports the same GraphQL mutations and subscriptions as **trackunit-client**.  
   Retained in the project as a reference client for validating TLS between the client and Kong.  
 
-### Core Services
+##### Core Services
 
 - **[graph-gateway](https://github.com/team-2-devs/graph-gateway)**  
   Microservice serving as the API facade and application gateway for the system. Provides a GraphQL API with queries, mutations, and subscriptions. Calls REST API `POST /uploads/start` and `POST /uploads/confirm` on **tu-ingestion-service**. Consumes `analysis.started` and `analysis.completed` events from RabbitMQ and forwards corresponding `analysis/started` and `analysis/completed` events to the onAnalysisStarted and onAnalysisCompleted GraphQL subscription fields.  
@@ -50,12 +49,12 @@ ref: system-architecture-final
   **Owner:** Kenneth. Description from the repository documentation.  
   A microservice that interfaces with object storage to issue presigned PUT/GET URLs and enforce upload and download policies.  
 
-### Shared Components
+##### Shared Components
 
 - **[Messaging](https://github.com/team-2-devs/messaging)**  
   NuGet package containing shared `MessageContracts` and reusable RabbitMQ and Kafka interfaces and implementations.
 
-### Infrastructure
+##### Infrastructure
 
 - **InfraCore**  
   Kubernetes-based orchestration environment bundling microservices and infrastructure components, including **graph-gateway**, **svc-analysis-orchestrator**, **Kong Gateway**, **oauth2-proxy**, and **RabbitMQ**.

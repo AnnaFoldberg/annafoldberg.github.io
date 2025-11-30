@@ -8,7 +8,7 @@ nav_order: 27
 ref: run-k8s-cluster
 ---
 
-### Kør Kubernetes Cluster Lokalt
+##### Kør Kubernetes Cluster Lokalt
 1. Sørg for, at Docker Desktop kører.  
 2. Navigér til `infra-core/k8s`-mappen.  
 3. Opret Kubernetes-clusteret:

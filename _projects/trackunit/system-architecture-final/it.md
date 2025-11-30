@@ -8,10 +8,9 @@ nav_order: 19
 ref: system-architecture-final
 ---
 
-## System Architecture
 >**Nota:** Solo i componenti elencati sotto **InfraCore** sono distribuiti in Kubernetes.
 
-### Applicazioni client
+##### Applicazioni client
 
 - **[trackunit-client](https://github.com/Team-2-Devs/trackunit-client)**  
   **Owner:** Eske.  
@@ -22,7 +21,7 @@ ref: system-architecture-final
   Applicazione console pensata per gli sviluppatori e utilizzata durante lo sviluppo. Implementa lo stesso flusso di autenticazione e supporta le stesse mutation e subscription GraphQL di **trackunit-client**.  
   Mantenuta nel progetto come client di riferimento per validare TLS tra client e Kong.  
 
-### Servizi core
+##### Servizi core
 
 - **[graph-gateway](https://github.com/team-2-devs/graph-gateway)**  
   Microservizio che funge da facciata API e gateway applicativo del sistema. Fornisce un’API GraphQL con query, mutation e subscription. Chiama le API REST `POST /uploads/start` e `POST /uploads/confirm` su **tu-ingestion-service**. Consuma gli eventi `analysis.started` e `analysis.completed` da RabbitMQ e inoltra i corrispondenti eventi `analysis/started` e `analysis/completed` ai campi di subscription GraphQL onAnalysisStarted e onAnalysisCompleted.  
@@ -50,12 +49,12 @@ ref: system-architecture-final
   **Owner:** Kenneth. Descrizione dalla documentazione del repository.  
   Microservizio che interagisce con l’object storage per emettere URL presigned PUT/GET e applicare politiche di caricamento e download.  
 
-### Componenti condivisi
+##### Componenti condivisi
 
 - **[Messaging](https://github.com/team-2-devs/messaging)**  
   Pacchetto NuGet contenente `MessageContracts` condivisi e interfacce e implementazioni riutilizzabili per RabbitMQ e Kafka.
 
-### Infrastruttura
+##### Infrastruttura
 
 - **InfraCore**  
   Ambiente di orchestrazione basato su Kubernetes che include microservizi e componenti infrastrutturali come **graph-gateway**, **svc-analysis-orchestrator**, **Kong Gateway**, **oauth2-proxy** e **RabbitMQ**.
