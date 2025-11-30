@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: Diagramma del Sistema"
+title: "Trackunit Prototype: Diagramma del Sistema"
 categories: [trackunit, microservices]
 tags: [architecture, infrastructure, rabbitmq]
 lang: it

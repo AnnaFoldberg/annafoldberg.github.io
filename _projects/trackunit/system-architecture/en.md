@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: System Architecture"
+title: "Trackunit Prototype: System Architecture"
 categories: [trackunit, microservices]
 tags: [architecture, infrastructure]
 lang: en

@@ -1,10 +1,10 @@
 ---
 title: "2025-11-04: Konklusioner fra Projektmøde"
 categories: [trackunit]
-tags: [project, group, feed-forward]
+tags: [project, group, individual, reflection, feed-forward]
 lang: da
 locale: da
-nav_order: 13
+nav_order: 14
 ref: log-2025-11-04-project-meeting-conclusions
 ---
 

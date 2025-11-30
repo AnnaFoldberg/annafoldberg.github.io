@@ -13,7 +13,7 @@ Fordi microservices er distribuerede, skal logs fra alle instanser aggregeres p�
 
 ![Logging og Monitorering](../../../assets/images/notes/security-between-microservices/logging-tracing/logging-monitoring.png)
 
-For at fange det fulde flow af en forespørgsel på tværs af services skal logs også korreleres. Dette opnås gennem tracing. Hver forespørgsel tildeles en unik trace-identifikator, som inkluderes i alle log- og tidsudskrifter for den pågældende forespørgsel. Hver service, der modtager forespørgslen, fortsætter med at bruge den samme identifikator og sender den videre nedstrøms. Dette gør det muligt at rekonstruere hele forløbet af en forespørgsel gennem systemet og analysere både adfærd og performance på en konsistent måde.
+For at fange det fulde flow af en forespørgsel på tværs af services skal logs også korreleres. Dette opnås gennem tracing. Hver forespørgsel tildeles en unik trace-identifikator, som inkluderes i alle log- og tidsudskrifter for den pågældende forespørgsel. Hver service, der modtager forespørgslen, fortsætter med at bruge den samme identifikator og sender den videre downstream. Dette gør det muligt at rekonstruere hele forløbet af en forespørgsel gennem systemet og analysere både adfærd og performance på en konsistent måde.
 
 <small> Kilde: [LinkedIn Learning: Microservices Foundations](https://www.linkedin.com/learning/microservices-foundations-23469069?contextUrn=urn%3Ali%3AlyndaLearningPath%3A645bcd56498e6459e79b3c71&u=57075649)</small>  
 <small> Kilde: [LinkedIn Learning: Securing Microservices](https://www.linkedin.com/learning/microservices-security/securing-microservices?contextUrn=urn%3Ali%3AlyndaLearningPath%3A645bcd56498e6459e79b3c71&resume=false&u=57075649)</small>

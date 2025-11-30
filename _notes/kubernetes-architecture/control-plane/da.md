@@ -9,8 +9,7 @@ ref: note-kubernetes-architecture-control-plane
 ---
 Et Kubernetes-cluster består af en control plane og mindst én worker node. Control plane fungerer som et kontroltårn i en lufthavn og styrer clusteret for at sikre, at nodes og Pods bliver oprettet, planlagt og vedligeholdt korrekt. Dets komponenter leverer den robusthed og automatisering, der gør Kubernetes til en effektiv container-orchestrator.
 
-##### Note
-I managed services som Amazon EKS eller Google GKE er control plane-komponenter skjult, da cloud-udbyderen vedligeholder dem.
+>Note: I managed services som Amazon EKS eller Google GKE er control plane-komponenter skjult, da cloud-udbyderen vedligeholder dem.
 
 ##### Kube API Server
 API-serveren eksponerer Kubernetes API’et, som giver endpoints til alle Kubernetes-objects såsom Pods, Deployments og Horizontal Pod Autoscaler.  

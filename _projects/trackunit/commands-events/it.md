@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: Comandi vs Eventi"
+title: "Trackunit Prototype: Comandi vs Eventi"
 categories: [trackunit, microservices]
 tags: [rabbitmq, architecture, naming-conventions]
 lang: it

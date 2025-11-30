@@ -9,8 +9,7 @@ ref: note-kubernetes-architecture-control-plane
 ---
 A Kubernetes cluster consists of a control plane and at least one worker node. The control plane acts like the air traffic control tower of an airport, managing the cluster to ensure that nodes and Pods are created, scheduled, and maintained correctly. Its components provide the resiliency and automation that make Kubernetes an effective container orchestrator.
 
-##### Note
-In managed services such as Amazon EKS or Google GKE, control plane components are hidden, as the cloud provider maintains them.
+>**Note:** In managed services such as Amazon EKS or Google GKE, control plane components are hidden, as the cloud provider maintains them.
 
 ##### Kube API Server
 The API server exposes the Kubernetes API, which provides endpoints for all Kubernetes objects such as Pods, Deployments, and the Horizontal Pod Autoscaler.  
@@ -53,6 +52,6 @@ This component integrates Kubernetes with external cloud provider APIs.
 - Enables use of resources from providers such as AWS, GCP, or Azure.  
 - Facilitates cluster operations that depend on cloud infrastructure.  
 
-![Cloud Controller Manager](../../../assets/images/notes/kubernetes/architecture/control-plane/cloud-controller-manager.png)
+![Cloud Controller Manager](../../../assets/images/notes/kubernetes-architecture/control-plane/cloud-controller-manager.png)
 
 <small> Source: [LinkedIn Learning: Learning Kubernetes](https://www.linkedin.com/learning/learning-kubernetes-16086900)</small>

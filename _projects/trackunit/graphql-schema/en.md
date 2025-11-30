@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: GraphQL Schema (SDL)"
+title: "Trackunit Prototype: GraphQL Schema (SDL)"
 categories: [trackunit]
 tags: [graphql]
 lang: en

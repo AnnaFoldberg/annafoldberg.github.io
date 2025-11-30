@@ -11,7 +11,7 @@ En pipeline kan ses som en funktion: den tager udvikler-commits som input og pro
 
 ![Pipeline](../../../assets/images/notes/application-container-security/secure-pipelines/pipeline.png)
 
-Mellem disse to punkter er der flere trin. Når kode committes, trigges CI (Continuous Integration)-pipen. Den bygger og tester softwaren, pakker den derefter i et container-image og gemmer det i et artefakt-repository. Senere henter CD (Continuous Delivery)-pipen dette image og deployer det til container-runtime med en orchestrator. Undervejs kan automatiserede sikkerhedskontroller indsættes som gates for at forhindre, at sårbar kode eller images når produktion. Tidlig detektion og rettelse reducerer risikoen for, at problemer bevæger sig nedstrøms.  
+Mellem disse to punkter er der flere trin. Når kode committes, trigges CI (Continuous Integration)-pipen. Den bygger og tester softwaren, pakker den derefter i et container-image og gemmer det i et artefakt-repository. Senere henter CD (Continuous Delivery)-pipen dette image og deployer det til container-runtime med en orchestrator. Undervejs kan automatiserede sikkerhedskontroller indsættes som gates for at forhindre, at sårbar kode eller images når produktion. Tidlig detektion og rettelse reducerer risikoen for, at problemer bevæger sig downstream.  
 
 Sikkerhed begynder i udviklingen. Statiske kodeanalyseværktøjer på udviklermaskiner fremhæver problemer, før koden når repositoryet. CI-buildet bør også køre statisk analyse og fejle builds, der ikke lever op til sikkerhedsstandarder. Adgang til kildekoderepositoryet bør begrænses til bidragsydere, med pull-request-modellen på plads. Værktøjer som Snyk gør det muligt at indlejre sikkerhedsscanninger i pull requests og levere feedback før merge.  
 

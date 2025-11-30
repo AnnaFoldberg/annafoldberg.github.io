@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: GraphGateway DCD"
+title: "Trackunit Prototype: GraphGateway DCD"
 categories: [trackunit, microservices]
 tags: [architecture]
 lang: en

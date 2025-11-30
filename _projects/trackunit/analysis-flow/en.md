@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: Analysis Flow"
+title: "Trackunit Prototype: Analysis Flow"
 categories: [trackunit, microservices]
 tags: [rabbitmq, graphql, architecture]
 lang: en

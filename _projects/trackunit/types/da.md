@@ -1,5 +1,5 @@
 ---
-title: "Trackunit: Types"
+title: "Trackunit Prototype: Types"
 categories: [trackunit]
 tags: [graphql]
 lang: da
