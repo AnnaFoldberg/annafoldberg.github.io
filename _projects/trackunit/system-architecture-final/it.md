@@ -8,7 +8,7 @@ nav_order: 19
 ref: system-architecture-final
 ---
 
->**Nota:** Solo i componenti elencati sotto **InfraCore** sono distribuiti in Kubernetes.
+>**Nota:** Solo i componenti elencati sotto **infra-core** sono distribuiti in Kubernetes.
 
 ##### Applicazioni client
 
@@ -51,12 +51,12 @@ ref: system-architecture-final
 
 ##### Componenti condivisi
 
-- **[Messaging](https://github.com/team-2-devs/messaging)**  
+- **[messaging](https://github.com/team-2-devs/messaging)**  
   Pacchetto NuGet contenente `MessageContracts` condivisi e interfacce e implementazioni riutilizzabili per RabbitMQ e Kafka.
 
 ##### Infrastruttura
 
-- **InfraCore**  
+- **[infra-core](https://github.com/team-2-devs/infra-core)**  
   Ambiente di orchestrazione basato su Kubernetes che include microservizi e componenti infrastrutturali come **graph-gateway**, **svc-analysis-orchestrator**, **Kong Gateway**, **oauth2-proxy** e **RabbitMQ**.
 
 - **kong-kong**  
