@@ -49,5 +49,5 @@ Her vurderede vi igen ud fra CIA-triaden:
 Når man vurderer sikkerheden i et system, tager man udgangspunkt i domænet og dokumentationen og vurderer, hvor risikoen ligger og hvilke tiltag, der giver mening i praksis. Vi kan ikke få alle teknologier i spil, så det er vigtigt at vælge med omhu.
 
 ##### Forberedelse til næste guildmøder  
-**Microservices og Kubernetes (20/11):** Vi skal tale om, hvordan vi vil præsentere vores projekt og vores faglige pointer til eksamen.  
+**Microservices og Kubernetes:** Vi skal tale om, hvordan vi vil præsentere vores projekt og vores faglige pointer til eksamen.  
 **IT-sikkerhed:** Hvis vi ønsker feedback på læringsmål, kan de sendes et par dage inden næste guildmøde.

@@ -49,5 +49,5 @@ Ancora una volta valutato tramite la triade CIA:
 Quando si valuta la sicurezza di un sistema, si parte dal dominio e dalla documentazione, per poi considerare dove risiedono i rischi e quali misure siano sensate nella pratica. Non possiamo includere tutte le tecnologie, quindi è importante scegliere con attenzione.
 
 ##### Preparazione per i prossimi guild meeting  
-**Microservizi e Kubernetes (20/11):** Discuteremo come presentare il nostro progetto e i punti tecnici all’esame.  
+**Microservizi e Kubernetes:** Discuteremo come presentare il nostro progetto e i punti tecnici all’esame.  
 **Sicurezza IT:** Se desideriamo feedback sugli obiettivi di apprendimento, possiamo inviarli qualche giorno prima del prossimo incontro.

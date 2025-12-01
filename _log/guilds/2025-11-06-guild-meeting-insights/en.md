@@ -49,5 +49,5 @@ Again, evaluated through the CIA triad:
 When evaluating system security, the starting point is the domain and documentation, followed by an assessment of where the risks lie and which measures make practical sense. We cannot include every technology, so it's important to choose carefully.
 
 ##### Preparation for upcoming guild meetings  
-**Microservices and Kubernetes (20/11):** We will discuss how to present our project and our technical points for the exam.  
+**Microservices and Kubernetes:** We will discuss how to present our project and our technical points for the exam.  
 **IT Security:** If we want feedback on learning objectives, these can be sent a few days before the next guild meeting.

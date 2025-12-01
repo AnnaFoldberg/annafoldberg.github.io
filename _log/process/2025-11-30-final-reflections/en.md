@@ -46,7 +46,9 @@ For cluster management and monitoring, I used `k9s`, which gave me an efficient 
 
 I then worked with key and certificate management to establish proper TLS termination between the client and **kong-proxy**. As part of this, I planned to extend the setup so that **kong** would serve not only as an API Gateway but also as an Ingress Controller, with an Ingress resource defining routing and TLS configuration for incoming external traffic. This ensures that all traffic outside the cluster is encrypted in transit and that certificates terminate securely at **kong-proxy**.
 
-I chose not to introduce mTLS — neither between the client and **kong-proxy**, nor internally between pods via a service mesh. Such a solution would be excessive given the scope of the project and the intended learning outcomes, but it could be meaningfully prioritised in a later iteration focused on a more comprehensive security model.
+I chose not to introduce mTLS — neither between the client and **kong-proxy**, nor internally between pods via a service mesh. Such a solution would be excessive given the scope of the project and the intended learning outcomes, but it could be meaningfully prioritised in a later iteration focused on a more comprehensive security model.  
+
+I had originally planned to experiment with Kubernetes using **TeaApp** as an intermediate step, but I concluded that it was unnecessary, because the existing docker-compose setup in the Trackunit project could be transferred to Kubernetes manifests relatively easily.  
 
 ##### Integration with External Services
 

@@ -48,6 +48,8 @@ Derefter arbejdede jeg med nøgle- og certifikathåndtering for at etablere korr
 
 Jeg valgte derimod ikke at indføre mTLS, hverken mellem klienten og kong-proxy eller internt i clusteret via et service mesh. Løsningen ville være overdimensioneret i forhold til projektets størrelse og læringsmål, men kan med fordel prioriteres i en senere iteration, hvor fokus er en mere komplet og dybdegående sikkerhedsmodel.  
 
+Jeg havde oprindeligt planlagt at afprøve Kubernetes med **TeaApp** som et mellemtrin, men vurderede, at det ikke var nødvendigt, fordi det eksisterende docker-compose setup i Trackunit-projektet kunne overføres relativt enkelt til Kubernetes-manifester.  
+
 ##### Integration med Eksterne Services
 
 Før integrationen med teamets øvrige microservices indførte jeg versionering af container-images. Det gjorde det muligt at rulle deployments tilbage, når nye versioner gav uforudsete problemer i kommunikationen mellem services.
