@@ -4,7 +4,7 @@ categories: [microservices, kubernetes, it-security]
 tags: [individual, reflection, process, project]
 lang: en
 locale: en
-nav_order: 18
+nav_order: 20
 ref: log-2025-11-30-final-reflections
 ---
 
