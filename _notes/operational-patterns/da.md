@@ -31,7 +31,7 @@ Dette id bør inkluderes i hver logmeddelelse, så logs og traces kan korreleres
 
 Eksternalisering af konfiguration forbedrer fleksibilitet og fejlfinding. Konfigurationsværdier bør injiceres eller hentes fremfor at være indlejret i kode, med konsistent værktøj og navngivningskonventioner.
 
-Det er bedre at eksternalisere for meget end for lidt, da manglende konfiguration kan hindre driften. Samtidig skal hemmeligheder beskyttes nøje.
+Det er bedre at eksternalisere for meget end for lidt, da manglende konfiguration kan hindre driften. Samtidig skal secrets beskyttes nøje.
 
 **Service Discovery**
 

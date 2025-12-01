@@ -8,26 +8,24 @@ nav_order: 22
 ref: learning-goals-it-security
 ---
 
-**Conoscenze**
-
+##### Conoscenza  
 Ho:  
-- Una comprensione del traffico east–west in Kubernetes e di come i service mesh gestiscono mTLS, identità dei servizi e policy di sicurezza tra i servizi.  
-- Conoscenza del processo di emissione e validazione dei token in OAuth 2.0 e OIDC, incluso l’utilizzo di Microsoft Entra come Identity Provider.  
-- Conoscenza della gestione sicura dei secrets, compresi i principi per conservarli in Kubernetes Secrets e le opzioni per un secret storage esterno.  
-- Conoscenza del logging e del tracing come strumenti di sicurezza, inclusa la loro importanza per l’integrità dei dati e il rilevamento di attività non autorizzate.  
+- Comprensione del traffico east–west e di come i service mesh in Kubernetes gestiscono la crittografia mTLS, l’identità dei servizi e le politiche di sicurezza tra i servizi.  
+- Conoscenza del processo di emissione e validazione dei token tramite OAuth 2.0 e OIDC, incluso l’uso di Microsoft Entra come Identity Provider.  
+- Conoscenza della gestione sicura dei secrets, inclusi i principi di archiviazione in Kubernetes Secrets e la familiarità con sistemi di secret storage esterni.  
+- Conoscenza di logging e tracing come strumenti di sicurezza, incluso il loro ruolo nel garantire l’integrità dei dati e rilevare attività non autorizzate.  
 - Comprensione del modello di responsabilità condivisa negli ambienti cloud-native e della divisione delle responsabilità tra cloud provider e sviluppatore.  
-- Conoscenza della valutazione dei rischi e dei metodi per la prioritizzazione delle misure di sicurezza.
+- Comprensione di come le misure di sicurezza vengono priorizzate in base alla dimensione del sistema, al modello di minaccia e alla complessità architetturale.  
 
-**Abilità**
+##### Abilità  
+Posso:  
+- Configurare una soluzione di API gateway basata su Kong per gestire il traffico in ingresso con funzionalità di sicurezza come TLS e rate limiting, oltre all’integrazione con l’autenticazione basata su OIDC tramite oauth2-proxy.  
+- Implementare principi zero-trust garantendo la validazione dei token sia in oauth2-proxy che in graph-gateway come parte del flusso complessivo di controllo degli accessi.  
+- Configurare e utilizzare Kubernetes Secrets tramite manifest dedicati per l’uso in Kubernetes deployments e Helm releases.  
+- Configurare la terminazione TLS con certificati self-signed tramite un Ingress Controller e una risorsa Ingress per garantire traffico crittografato tra il client e il punto di ingresso del sistema.  
 
-So:  
-- Configurare una soluzione API gateway basata su Kong per gestire il traffico in ingresso con funzionalità di sicurezza come TLS, rate limiting e autenticazione basata su OIDC tramite oauth2-proxy.  
-- Implementare principi zero-trust garantendo la validazione dei token sia in oauth2-proxy sia in graph-gateway come parte del flusso di controllo degli accessi.  
-- Configurare comunicazione TLS con certificati auto-firmati tra client e load balancer Kubernetes per proteggere il traffico al di fuori del cluster.
-
-**Competenze**
-
-Sono in grado di:  
-- Progettare network policy sicure per i deployments Kubernetes e per applicazioni basate su Helm.  
-- Costruire un’architettura di sicurezza coerente che consente l’accesso solo ai client autorizzati tramite autenticazione JWT/OIDC e che rifiuta le richieste non autorizzate all’API gateway.  
-- Valutare e prioritizzare le misure di sicurezza rilevanti in sistemi basati su microservizi e Kubernetes.
+##### Competenze  
+Posso:  
+- Valutare le misure di sicurezza rilevanti nei sistemi basati su microservizi e Kubernetes.  
+- Sviluppare network policy sicure per Kubernetes deployments e Helm releases.  
+- Progettare un’architettura di sicurezza che combini traffico crittografato tra il client e il punto di ingresso del sistema con autenticazione e rate limiting all’API gateway, bloccando traffico non autorizzato o abusivo prima che raggiunga i servizi interni.

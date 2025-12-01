@@ -1,7 +1,7 @@
 ---
 title: "2025-11-30: Riflessioni Finali"
 categories: [microservices, kubernetes, it-security]
-tags: [individual, reflection]
+tags: [individual, reflection, process, project]
 lang: it
 locale: it
 nav_order: 18

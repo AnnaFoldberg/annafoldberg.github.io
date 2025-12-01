@@ -8,26 +8,24 @@ nav_order: 22
 ref: learning-goals-it-security
 ---
 
-**Viden**
-
+##### Viden  
 Jeg har:  
-- Forståelse for east–west trafik i Kubernetes og hvordan service meshes håndterer mTLS, service-identitet og sikkerhedspolitikker mellem services.  
-- Kendskab til processen bag udstedelse og validering af tokens i OAuth 2.0 og OIDC, herunder brugen af Microsoft Entra som Identity Provider.  
-- Viden om sikker håndtering af secrets, herunder principper for opbevaring i Kubernetes Secrets og muligheder for ekstern secret storage.  
-- Viden om logging og tracing som sikkerhedsværktøjer, herunder deres betydning for dataintegritet og detektion af uautoriseret aktivitet.  
-- Forståelse for shared responsibility i cloud-native miljøer og fordelingen af ansvar mellem cloud-udbyder og udvikler.  
-- Kendskab til risikovurdering og metoder til prioritering af sikkerhedstiltag.
+- Forståelse for east–west trafik og hvordan service meshes i Kubernetes håndterer mTLS-kryptering, service-identitet og sikkerhedspolitikker på tværs af services.  
+- Kendskab til processen bag udstedelse og validering af tokens via OAuth 2.0 og OIDC, herunder brugen af Microsoft Entra som Identity Provider.  
+- Viden om sikker håndtering af secrets, herunder principper for opbevaring i Kubernetes Secrets samt kendskab til ekstern secret storage.  
+- Viden om logging og tracing som sikkerhedsværktøjer, herunder deres rolle i at sikre dataintegritet og opdage uautoriseret aktivitet.  
+- Forståelse for shared responsibility i cloud-native miljøer, og hvordan ansvar for sikkerhed og drift fordeles mellem cloud-udbyder og udvikler.  
+- Forståelse for, hvordan sikkerhedstiltag prioriteres ud fra systemets størrelse, trusselsmodel og arkitekturens kompleksitet.  
 
-**Færdigheder**
-
+##### Færdigheder  
 Jeg kan:  
-- Opsætte en API-gateway-løsning baseret på Kong til håndtering af indgående trafik, med sikkerhedsfunktioner som TLS, rate limiting og OIDC-baseret autentifikation via oauth2-proxy.  
-- Implementere zero-trust-principper ved at sikre token-validering i både oauth2-proxy og graph-gateway som del af den samlede adgangskontrol.  
-- Opsætte TLS-kommunikation med selvsignerede certifikater mellem klienter og Kubernetes-load balancere for at sikre krypteret trafik uden for clusteret.
+- Opsætte en API-gateway løsning baseret på Kong til håndtering af indgående trafik med sikkerhedsfunktioner som TLS og rate limiting samt integration med OIDC-baseret autentifikation via oauth2-proxy.  
+- Implementere zero-trust-principper ved at sikre token-validering i både oauth2-proxy og graph-gateway som led i det samlede adgangskontrolflow.  
+- Opsætte og anvende Kubernetes Secrets via separate secret-manifester til brug i både Kubernetes-deployments og Helm-releases.  
+- Opsætte TLS-terminering med selvsignerede certifikater via Ingress Controller og Ingress-ressource for at sikre krypteret trafik mellem klienten og indgangspunktet til systemet.  
 
-**Kompetencer**
-
+##### Kompetencer  
 Jeg kan:  
-- Udarbejde sikre network policies til både Kubernetes-deployments og Helm-baserede applikationer.  
-- Opbygge en sammenhængende sikkerhedsarkitektur, der kun tillader autoriserede klienter adgang via JWT/OIDC-baseret autentifikation, og som afviser uautoriserede kald ved API-gatewayen.  
-- Evaluere og prioritere relevante sikkerhedstiltag i microservices- og Kubernetes-baserede systemer.
+- Vurdere relevante sikkerhedstiltag i microservices- og kubernetesdrevede systemer.  
+- Udarbejde sikre network policies til både Kubernetes-deployments og Helm-releases.  
+- Designe en sikkerhedsarkitektur, der kombinerer krypteret trafik mellem klienten og systemets indgangspunkt med autentifikation og rate-limiting ved API-gatewayen, så uautoriserede kald og misbrugstrafik blokeres, før de når interne services.

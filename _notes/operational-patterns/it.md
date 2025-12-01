@@ -31,7 +31,7 @@ Questo identificatore dovrebbe essere incluso in ogni messaggio di log, consente
 
 Esternalizzare la configurazione migliora la flessibilità e il troubleshooting. I valori di configurazione dovrebbero essere iniettati o recuperati piuttosto che incorporati nel codice, con strumenti e convenzioni di denominazione coerenti.
 
-È meglio esternalizzare troppo che troppo poco, poiché una configurazione mancante può ostacolare le operazioni. Allo stesso tempo, i segreti devono essere protetti attentamente.
+È meglio esternalizzare troppo che troppo poco, poiché una configurazione mancante può ostacolare le operazioni. Allo stesso tempo, i secrets devono essere protetti attentamente.
 
 **Service Discovery**
 
