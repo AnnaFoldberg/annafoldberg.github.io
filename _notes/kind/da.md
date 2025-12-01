@@ -24,4 +24,4 @@ Alternativt kan man bruge Service-typen NodePort til lokal udvikling.
 - **Slet cluster:** `kind delete cluster`  
 - **Simuler cloud-udbyder:** `sudo go/bin/cloud-provider-kind`
 
-<small>Kilde: [Kind Documentation](https://kind.sigs.k8s.io/)</small>
+<small>Kilde: [kind Documentation](https://kind.sigs.k8s.io/)</small>

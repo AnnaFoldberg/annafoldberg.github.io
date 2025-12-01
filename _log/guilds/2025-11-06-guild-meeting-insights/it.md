@@ -10,9 +10,9 @@ ref: log-2025-11-06-guild-meeting-insights
 
 ##### Microservizi e Kubernetes
 
-È stato sottolineato che l’esame riguarda ciò che *io* ho imparato sui microservizi e Kubernetes, sia in teoria che in pratica. Il progetto serve solo come prova del mio apprendimento — non è un obiettivo in sé. Devo quindi spiegare le mie scelte architetturali, le mie implementazioni e come ho acquisito la comprensione, ad esempio tramite video ed esperimenti.
+È stato sottolineato che l’esame riguarda ciò che *io* ho imparato sui microservizi e Kubernetes, sia in teoria che in pratica. Il progetto serve solo come prova del mio apprendimento, non è un obiettivo in sé. Devo quindi spiegare le mie scelte architetturali, le mie implementazioni e come ho acquisito la comprensione, ad esempio tramite video ed esperimenti.
 
-Invece di elencare quali microservizi contiene il progetto, ha più senso spiegare come funzionano i microservizi in teoria e come li ho implementati io stessa in pratica. È stato chiarito che l’attenzione deve essere sulle mie scelte architetturali, sulle mie implementazioni e sulla mia comprensione dei principi — non una spiegazione dettagliata del codice o dei servizi degli altri. Inoltre, non è necessario che i servizi degli altri siano deployati in Kubernetes.
+Invece di elencare quali microservizi contiene il progetto, ha più senso spiegare come funzionano i microservizi in teoria e come li ho implementati io stessa in pratica. È stato chiarito che l’attenzione deve essere sulle mie scelte architetturali, sulle mie implementazioni e sulla mia comprensione dei principi, non una spiegazione dettagliata del codice o dei servizi degli altri. Inoltre, non è necessario che i servizi degli altri siano deployati in Kubernetes.
 
 ##### Sicurezza IT
 

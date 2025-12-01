@@ -30,7 +30,7 @@ I **etcd** lagres **Kubernetes API Objects**, herunder **deployments**, **servic
 
 ![data-plane.png](../../../assets/images/projects/trackunit/kubernetes-cluster-architecture/data-plane.png)
 
-Kører applikationspods — **graph-gateway**, **svc-analysis-orchestrator**, **oauth2-proxy**, **kong-kong** og **rabbitmq** — samt systempods **calico-node** og **kube-proxy** i container-runtime. Kører nodeprocessen **kubelet**.
+Kører applikationspods, **graph-gateway**, **svc-analysis-orchestrator**, **oauth2-proxy**, **kong-kong** og **rabbitmq**, samt systempods **calico-node** og **kube-proxy** i container-runtime. Kører nodeprocessen **kubelet**.
 
 ##### Interaktioner mellem komponenter og nodes
 

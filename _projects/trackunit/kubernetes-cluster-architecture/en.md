@@ -30,7 +30,7 @@ In **etcd**, the **Kubernetes API Objects** are stored, including **deployments*
 
 ![data-plane.png](../../../assets/images/projects/trackunit/kubernetes-cluster-architecture/data-plane.png)
 
-Runs application pods — **graph-gateway**, **svc-analysis-orchestrator**, **oauth2-proxy**, **kong-kong**, and **rabbitmq** — as well as system pods **calico-node** and **kube-proxy** in the container runtime. Runs the node process **kubelet**.
+Runs application pods, **graph-gateway**, **svc-analysis-orchestrator**, **oauth2-proxy**, **kong-kong**, and **rabbitmq**, as well as system pods **calico-node** and **kube-proxy** in the container runtime. Runs the node process **kubelet**.
 
 ##### Interactions between components and nodes
 

@@ -16,13 +16,13 @@ An Ingress object requires an Ingress Controller, which translates the Ingress r
 
 ##### TLS
 
-An Ingress can be secured with TLS by referencing a Secret containing a certificate and private key. Ingress only handles TLS on port 443, and traffic to Services afterward is expected to be unencrypted—TLS is terminated at the Ingress layer.
+An Ingress can be secured with TLS by referencing a Secret containing a certificate and private key. Ingress only handles TLS on port 443, and traffic to Services afterward is expected to be unencrypted-TLS is terminated at the Ingress layer.
 
 The TLS section specifies which hosts should use the certificate. If multiple hosts are configured, routing occurs via the SNI extension, provided the controller supports it.
 
 The certificate inside the referenced Secret must be named `tls.crt` and `tls.key`, and the domain (CN/FQDN) must match the host in the Ingress rule.
 
-**>SNI:** The mechanism that allows multiple HTTPS domains to be hosted on the same IP by letting the client reveal the hostname early in the TLS handshake.
+>**SNI:** The mechanism that allows multiple HTTPS domains to be hosted on the same IP by letting the client reveal the hostname early in the TLS handshake.
 
 **Example of a simple Ingress that routes traffic to a single Service with TLS**  
 

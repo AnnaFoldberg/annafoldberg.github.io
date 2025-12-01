@@ -24,4 +24,4 @@ In alternativa, è possibile utilizzare il tipo di Service NodePort per lo svilu
 - Eliminare un cluster: `kind delete cluster`  
 - Simulare un cloud provider: `sudo go/bin/cloud-provider-kind`
 
-<small>Fonte: [Kind Documentation](https://kind.sigs.k8s.io/)</small>
+<small>Fonte: [kind Documentation](https://kind.sigs.k8s.io/)</small>

@@ -22,4 +22,4 @@ It uses the `RequireApiScope` policy, which verifies that the token contains the
 
 This separation provides **defense in depth** and enables the introduction of different user groups in the future, where specific queries, mutations, or subscriptions can be restricted to tokens with particular scopes.  
 
-This allows the API to evolve with role-specific or client-specific functionality — without modifying the configuration of either the gateway or **oauth2-proxy**.
+This allows the API to evolve with role-specific or client-specific functionality, without modifying the configuration of either the gateway or **oauth2-proxy**.

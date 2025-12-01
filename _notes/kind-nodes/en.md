@@ -20,4 +20,4 @@ In a production cluster, the configuration is typically different:
 - Control-plane nodes are tainted with `node-role.kubernetes.io/control-plane:NoSchedule` to prevent workloads from being scheduled there  
 - Separate worker nodes run all application pods  
 
-<small>Source: [kind.sigs.k8s.io](https://kind.sigs.k8s.io/docs/user/configuration/#nodes)</small>
+<small>Source: [kind Documentation](https://kind.sigs.k8s.io/docs/user/configuration/#nodes)</small>

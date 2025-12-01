@@ -22,4 +22,4 @@ Qui viene utilizzata la policy `RequireApiScope`, che verifica che il token cont
 
 Questa separazione fornisce **defense in depth** e permette di introdurre in futuro gruppi di utenti diversi, in cui specifiche query, mutation o subscription sono disponibili solo per token che possiedono determinati scope.  
 
-In questo modo l’API può essere estesa con funzionalità specifiche per ruoli o client — senza modificare la configurazione né della gateway né di **oauth2-proxy**.
+In questo modo l’API può essere estesa con funzionalità specifiche per ruoli o client, senza modificare la configurazione né della gateway né di **oauth2-proxy**.

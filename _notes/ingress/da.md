@@ -22,7 +22,7 @@ TLS-sektionen i en Ingress angiver hvilke hosts, der skal bruge certifikatet. Hv
 
 Certifikatet i det refererede Secret skal hedde `tls.crt` og `tls.key`, og domænenavnet (CN/FQDN) skal matche hosten i Ingress-reglen.
 
-**>SNI:** Mekanismen, der gør det muligt at hoste flere HTTPS-domæner på samme IP ved at lade klienten afsløre domænenavnet tidligt i TLS-handshaket.
+>**SNI:** Mekanismen, der gør det muligt at hoste flere HTTPS-domæner på samme IP ved at lade klienten afsløre domænenavnet tidligt i TLS-handshaket.
 
 **Eksempel på en simpel Ingress, der sender trafik til en enkelt Service med TLS**  
 

@@ -1,7 +1,7 @@
 ---
 title: "Trackunit Prototype: Analyseflow"
 categories: [trackunit, microservices]
-tags: [rabbitmq, graphql, architecture]
+tags: [rabbitmq, graphql, architecture, prototype]
 lang: da
 locale: da
 nav_order: 15

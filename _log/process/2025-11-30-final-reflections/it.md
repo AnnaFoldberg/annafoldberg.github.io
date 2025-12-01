@@ -46,7 +46,7 @@ Per la gestione e il monitoraggio del cluster ho utilizzato `k9s`, che offre una
 
 Successivamente ho lavorato sulla gestione di chiavi e certificati per stabilire una corretta terminazione TLS tra il client e **kong-proxy**. In questo contesto, ho pianificato di estendere la configurazione affinché **kong** fungesse non solo da API Gateway ma anche da Ingress Controller, con una risorsa Ingress che definisse routing e configurazione TLS per il traffico esterno in ingresso al cluster. Questo garantisce che tutto il traffico al di fuori del cluster sia crittografato in transito e che i certificati vengano terminati in modo sicuro su **kong-proxy**.
 
-Ho scelto di non introdurre mTLS — né tra il client e **kong-proxy**, né internamente tra i pod tramite un service mesh. Una soluzione del genere sarebbe eccessiva rispetto alla portata del progetto e agli obiettivi formativi, ma potrebbe essere introdotta in una futura iterazione orientata a un modello di sicurezza più completo.  
+Ho scelto di non introdurre mTLS, né tra il client e **kong-proxy**, né internamente tra i pod tramite un service mesh. Una soluzione del genere sarebbe eccessiva rispetto alla portata del progetto e agli obiettivi formativi, ma potrebbe essere introdotta in una futura iterazione orientata a un modello di sicurezza più completo.  
 
 Avevo inizialmente previsto di sperimentare Kubernetes con **TeaApp** come fase intermedia, ma ho ritenuto che non fosse necessario, perché la configurazione docker-compose esistente nel progetto Trackunit poteva essere trasferita ai manifest Kubernetes in modo relativamente semplice.  
 

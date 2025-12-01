@@ -10,9 +10,9 @@ ref: log-2025-11-06-guild-meeting-insights
 
 ##### Microservices and Kubernetes
 
-It was emphasized that the exam focuses on what *I* have learned about microservices and Kubernetes, both theoretically and in practice. The project is only evidence of this learning — not a goal in itself. Therefore, I should explain my own architectural decisions, my implementations, and how I acquired the understanding, for example through videos and experiments.
+It was emphasized that the exam focuses on what I have learned about microservices and Kubernetes, both theoretically and in practice. The project is only evidence of this learning, not a goal in itself. Therefore, I should explain my own architectural decisions, my implementations, and how I acquired the understanding, for example through videos and experiments.
 
-Rather than listing which microservices the project contains, it is more meaningful to explain how microservices work in theory and how I implemented them myself in practice. It was made clear that the focus should be on my own architectural decisions, my implementations, and my understanding of the principles — not a detailed walkthrough of others’ code or services. Likewise, the other services do not need to be deployed in Kubernetes.
+Rather than listing which microservices the project contains, it is more meaningful to explain how microservices work in theory and how I implemented them myself in practice. It was made clear that the focus should be on my own architectural decisions, my implementations, and my understanding of the principles, not a detailed walkthrough of others’ code or services. Likewise, the other services do not need to be deployed in Kubernetes.
 
 ##### IT Security
 

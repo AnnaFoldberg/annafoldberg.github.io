@@ -24,4 +24,4 @@ Alternatively, the NodePort Service type can be used for local development.
 - Delete cluster: `kind delete cluster`  
 - Simulate cloud provider: `sudo go/bin/cloud-provider-kind`
 
-<small>Source: [Kind Documentation](https://kind.sigs.k8s.io/)</small>
+<small>Source: [kind Documentation](https://kind.sigs.k8s.io/)</small>

@@ -22,4 +22,4 @@ Her anvendes politikken `RequireApiScope`, som kontrollerer, at tokenet indehold
 
 Denne opdeling giver **defense in depth** og gør det muligt at introducere forskellige brugergrupper senere, hvor specifikke queries, mutationer eller subscriptions kun er tilgængelige for tokens med bestemte scopes.  
 
-På den måde kan API’et udvides med funktioner målrettet specifikke roller eller klienter — uden at ændre konfigurationen af hverken gatewayen eller **oauth2-proxy**.
+På den måde kan API’et udvides med funktioner målrettet specifikke roller eller klienter, uden at ændre konfigurationen af hverken gatewayen eller **oauth2-proxy**.

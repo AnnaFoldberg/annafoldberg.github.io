@@ -12,7 +12,7 @@ A Service in Kubernetes is a stable access point that allows one or more Pods to
 
 A Service groups a set of Pods, typically using a selector, and exposes them as a single logical endpoint. This means that applications inside or outside the cluster can always reach the same address, regardless of which Pods are currently running.
 
-Kubernetes provides three primary service types — ClusterIP, NodePort, and LoadBalancer — which determine whether the service is internal only, reachable via node IPs, or exposed through an external load balancer.
+Kubernetes provides three primary service types, ClusterIP, NodePort, and LoadBalancer, which determine whether the service is internal only, reachable via node IPs, or exposed through an external load balancer.
 
 ##### ClusterIP (default)  
 Exposes the service internally within the cluster through an internal cluster IP. Used for Pod-to-Pod communication and provides no external access. Kubernetes creates this service type if no other type is specified.

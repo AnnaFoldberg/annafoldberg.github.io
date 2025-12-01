@@ -30,7 +30,7 @@ In **etcd** vengono memorizzati gli **oggetti Kubernetes API**, tra cui **deploy
 
 ![data-plane.png](../../../assets/images/projects/trackunit/kubernetes-cluster-architecture/data-plane.png)
 
-Esegue i pod applicativi — **graph-gateway**, **svc-analysis-orchestrator**, **oauth2-proxy**, **kong-kong** e **rabbitmq** — oltre ai pod di sistema **calico-node** e **kube-proxy** nel container runtime. Esegue anche il processo del nodo **kubelet**.
+Esegue i pod applicativi, **graph-gateway**, **svc-analysis-orchestrator**, **oauth2-proxy**, **kong-kong** e **rabbitmq**, oltre ai pod di sistema **calico-node** e **kube-proxy** nel container runtime. Esegue anche il processo del nodo **kubelet**.
 
 ##### Interazioni tra componenti e nodi
 

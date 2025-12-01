@@ -20,4 +20,4 @@ Selvom en control-plane node godt kan køre pods, vil et produktionscluster typi
 - Control-plane noder er tainted med `node-role.kubernetes.io/control-plane:NoSchedule` som standard, så workloads ikke schedules der  
 - Separate worker-noder kører alle pods  
 
-<small>Kilde: [kind.sigs.k8s.io](https://kind.sigs.k8s.io/docs/user/configuration/#nodes)</small>
+<small>Kilde: [kind Documentation](https://kind.sigs.k8s.io/docs/user/configuration/#nodes)</small>

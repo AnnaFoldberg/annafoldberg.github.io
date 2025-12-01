@@ -16,13 +16,13 @@ L’oggetto Ingress richiede un Ingress Controller, che traduce le regole dell�
 
 ##### TLS
 
-Un Ingress può essere protetto con TLS facendo riferimento a un Secret che contiene un certificato e una chiave privata. L’Ingress gestisce il TLS solo sulla porta 443 e si aspetta che il traffico verso i Services avvenga senza crittografia—il TLS viene terminato a livello di Ingress.
+Un Ingress può essere protetto con TLS facendo riferimento a un Secret che contiene un certificato e una chiave privata. L’Ingress gestisce il TLS solo sulla porta 443 e si aspetta che il traffico verso i Services avvenga senza crittografia-il TLS viene terminato a livello di Ingress.
 
 La sezione TLS specifica quali host devono usare il certificato. Se vengono configurati più host, l’instradamento avviene tramite l’estensione SNI, a condizione che il controller la supporti.
 
 Il certificato nel Secret deve chiamarsi `tls.crt` e `tls.key`, e il dominio (CN/FQDN) deve corrispondere all’host nella regola dell’Ingress.
 
-**>SNI:** Il meccanismo che permette di ospitare più domini HTTPS sulla stessa IP, consentendo al client di rivelare il nome del dominio all’inizio dell’handshake TLS.
+>**SNI:** Il meccanismo che permette di ospitare più domini HTTPS sulla stessa IP, consentendo al client di rivelare il nome del dominio all’inizio dell’handshake TLS.
 
 **Esempio di un semplice Ingress che inoltra traffico a un singolo Service con TLS**  
 

@@ -51,7 +51,7 @@ secretVolumes:
 ##### The Ingress Resource
 
 The Ingress resource defines host, path and TLS settings and refers to `IngressClass: kong`.  
-It is only a declaration — the **Kong Ingress Controller** converts it into actual runtime configuration in **Kong**.
+It is only a declaration, which the **Kong Ingress Controller** converts into actual runtime configuration in **Kong**.
 
 ```yaml
 # ingress-graphql.yaml

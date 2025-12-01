@@ -20,4 +20,4 @@ In un cluster di produzione la configurazione è diversa:
 - I nodi control-plane sono contrassegnati con il taint `node-role.kubernetes.io/control-plane:NoSchedule` per evitare che i workloads vengano schedulati su di essi  
 - I nodi worker separati eseguono tutti i pod applicativi  
 
-<small>Fonte: [kind.sigs.k8s.io](https://kind.sigs.k8s.io/docs/user/configuration/#nodes)</small>
+<small>Fonte: [kind Documentation](https://kind.sigs.k8s.io/docs/user/configuration/#nodes)</small>
